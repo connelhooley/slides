@@ -1,0 +1,27 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "private": true,
+  "description": "slides",
+  "author": "Connel Hooley",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.15.2",
+    "gatsby-plugin-manifest": "^4.16.0",
+    "gatsby-remark-copy-linked-files": "^5.16.0",
+    "gatsby-source-filesystem": "^4.16.0",
+    "gatsby-transformer-remark": "^5.16.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "reveal.js": "^4.3.1"
+  }
+}
