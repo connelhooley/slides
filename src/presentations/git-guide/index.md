@@ -1,8 +1,8 @@
 ---
-title: Guide to git
+title: Git Guide
 ---
 
-# Guide to git
+# Git Guide
 
 ---
 
