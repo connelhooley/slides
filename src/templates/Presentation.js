@@ -1,15 +1,20 @@
 import React, { useEffect, useRef } from "react";
 import { graphql } from "gatsby";
-import Reveal from "reveal.js";
-import Highlight from "reveal.js/plugin/highlight/highlight";
-import Notes from "reveal.js/plugin/notes/notes";
 
 const Presentations = ({data}) => {
   const ref = useRef();
   useEffect(() => {
-    const deck = new Reveal(ref.current, { plugins: [Highlight, Notes] });
-    deck.initialize();
-    return () => deck.destroy();
+    const cb = async () => {
+      if (window.navigator) {
+        const Reveal = (await import("reveal.js")).default;
+        const Highlight = (await import("reveal.js/plugin/highlight/highlight")).default;
+        const Notes = (await import("reveal.js/plugin/notes/notes")).default;
+        const deck = new Reveal(ref.current, { plugins: [Highlight, Notes] });
+        deck.initialize();
+        return () => deck.destroy();
+      }
+    };
+    cb();
   }, []);
   return (
     <>
