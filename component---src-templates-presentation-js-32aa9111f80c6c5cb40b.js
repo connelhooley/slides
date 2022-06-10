@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkslides=self.webpackChunkslides||[]).push([[970],{5642:function(e,t,a){a.r(t);var l=a(7294);t.default=function(e){var t=e.data,a=(0,l.useRef)();return(0,l.useEffect)((function(){}),[]),l.createElement(l.Fragment,null,l.createElement("title",null,t.markdownRemark.frontmatter.title),l.createElement("div",{ref:a,className:"reveal"},l.createElement("div",{className:"slides",dangerouslySetInnerHTML:{__html:t.markdownRemark.html}})))}}}]);
+//# sourceMappingURL=component---src-templates-presentation-js-32aa9111f80c6c5cb40b.js.map

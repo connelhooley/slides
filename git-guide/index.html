@@ -1,0 +1,671 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="theme-color" content="#ffffff"/><meta name="generator" content="Gatsby 4.15.2"/><style data-href="/styles.fd20daae0d686f933a19.css" data-identity="gatsby-global-css">@import url(https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300;400&family=Slabo+27px&family=Source+Code+Pro:wght@300;400&display=swap);
+/*!
+* reveal.js 4.3.1
+* https://revealjs.com
+* MIT licensed
+*
+* Copyright (C) 2011-2022 Hakim El Hattab, https://hakim.se
+*/.reveal .r-stretch,.reveal .stretch{max-height:none;max-width:none}.reveal pre.r-stretch code,.reveal pre.stretch code{box-sizing:border-box;height:100%;max-height:100%}.reveal .r-fit-text{display:inline-block;white-space:nowrap}.reveal .r-stack{display:grid}.reveal .r-stack>*{grid-area:1/1;margin:auto}.reveal .r-hstack,.reveal .r-vstack{display:flex}.reveal .r-hstack img,.reveal .r-hstack video,.reveal .r-vstack img,.reveal .r-vstack video{min-height:0;min-width:0;-o-object-fit:contain;object-fit:contain}.reveal .r-vstack{flex-direction:column}.reveal .r-hstack,.reveal .r-vstack{align-items:center;justify-content:center}.reveal .r-hstack{flex-direction:row}.reveal .items-stretch{align-items:stretch}.reveal .items-start{align-items:flex-start}.reveal .items-center{align-items:center}.reveal .items-end{align-items:flex-end}.reveal .justify-between{justify-content:space-between}.reveal .justify-around{justify-content:space-around}.reveal .justify-start{justify-content:flex-start}.reveal .justify-center{justify-content:center}.reveal .justify-end{justify-content:flex-end}html.reveal-full-page{height:100%;height:100vh;height:calc(var(--vh,1vh)*100);overflow:hidden;width:100%}.reveal-viewport{background-color:#fff;color:#000;height:100%;line-height:1;margin:0;overflow:hidden;position:relative}.reveal-viewport:-webkit-full-screen{height:100%!important;left:0!important;top:0!important;-webkit-transform:none!important;transform:none!important;width:100%!important}.reveal-viewport:-ms-fullscreen{height:100%!important;left:0!important;top:0!important;transform:none!important;width:100%!important}.reveal-viewport:fullscreen{height:100%!important;left:0!important;top:0!important;-webkit-transform:none!important;transform:none!important;width:100%!important}.reveal .slides section .fragment{opacity:0;transition:all .2s ease;visibility:hidden;will-change:opacity}.reveal .slides section .fragment.visible{opacity:1;visibility:inherit}.reveal .slides section .fragment.disabled{transition:none}.reveal .slides section .fragment.grow{opacity:1;visibility:inherit}.reveal .slides section .fragment.grow.visible{-webkit-transform:scale(1.3);transform:scale(1.3)}.reveal .slides section .fragment.shrink{opacity:1;visibility:inherit}.reveal .slides section .fragment.shrink.visible{-webkit-transform:scale(.7);transform:scale(.7)}.reveal .slides section .fragment.zoom-in{-webkit-transform:scale(.1);transform:scale(.1)}.reveal .slides section .fragment.zoom-in.visible{-webkit-transform:none;transform:none}.reveal .slides section .fragment.fade-out{opacity:1;visibility:inherit}.reveal .slides section .fragment.fade-out.visible{opacity:0;visibility:hidden}.reveal .slides section .fragment.semi-fade-out{opacity:1;visibility:inherit}.reveal .slides section .fragment.semi-fade-out.visible{opacity:.5;visibility:inherit}.reveal .slides section .fragment.strike{opacity:1;visibility:inherit}.reveal .slides section .fragment.strike.visible{text-decoration:line-through}.reveal .slides section .fragment.fade-up{-webkit-transform:translateY(40px);transform:translateY(40px)}.reveal .slides section .fragment.fade-up.visible{-webkit-transform:translate(0);transform:translate(0)}.reveal .slides section .fragment.fade-down{-webkit-transform:translateY(-40px);transform:translateY(-40px)}.reveal .slides section .fragment.fade-down.visible{-webkit-transform:translate(0);transform:translate(0)}.reveal .slides section .fragment.fade-right{-webkit-transform:translate(-40px);transform:translate(-40px)}.reveal .slides section .fragment.fade-right.visible{-webkit-transform:translate(0);transform:translate(0)}.reveal .slides section .fragment.fade-left{-webkit-transform:translate(40px);transform:translate(40px)}.reveal .slides section .fragment.fade-left.visible{-webkit-transform:translate(0);transform:translate(0)}.reveal .slides section .fragment.current-visible,.reveal .slides section .fragment.fade-in-then-out{opacity:0;visibility:hidden}.reveal .slides section .fragment.current-visible.current-fragment,.reveal .slides section .fragment.fade-in-then-out.current-fragment{opacity:1;visibility:inherit}.reveal .slides section .fragment.fade-in-then-semi-out{opacity:0;visibility:hidden}.reveal .slides section .fragment.fade-in-then-semi-out.visible{opacity:.5;visibility:inherit}.reveal .slides section .fragment.fade-in-then-semi-out.current-fragment,.reveal .slides section .fragment.highlight-blue,.reveal .slides section .fragment.highlight-current-blue,.reveal .slides section .fragment.highlight-current-green,.reveal .slides section .fragment.highlight-current-red,.reveal .slides section .fragment.highlight-green,.reveal .slides section .fragment.highlight-red{opacity:1;visibility:inherit}.reveal .slides section .fragment.highlight-red.visible{color:#ff2c2d}.reveal .slides section .fragment.highlight-green.visible{color:#17ff2e}.reveal .slides section .fragment.highlight-blue.visible{color:#1b91ff}.reveal .slides section .fragment.highlight-current-red.current-fragment{color:#ff2c2d}.reveal .slides section .fragment.highlight-current-green.current-fragment{color:#17ff2e}.reveal .slides section .fragment.highlight-current-blue.current-fragment{color:#1b91ff}.reveal:after{content:"";font-style:italic}.reveal iframe{z-index:1}.reveal a{position:relative}@-webkit-keyframes bounce-right{0%,10%,25%,40%,50%{-webkit-transform:translateX(0);transform:translateX(0)}20%{-webkit-transform:translateX(10px);transform:translateX(10px)}30%{-webkit-transform:translateX(-5px);transform:translateX(-5px)}}@keyframes bounce-right{0%,10%,25%,40%,50%{-webkit-transform:translateX(0);transform:translateX(0)}20%{-webkit-transform:translateX(10px);transform:translateX(10px)}30%{-webkit-transform:translateX(-5px);transform:translateX(-5px)}}@-webkit-keyframes bounce-left{0%,10%,25%,40%,50%{-webkit-transform:translateX(0);transform:translateX(0)}20%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}30%{-webkit-transform:translateX(5px);transform:translateX(5px)}}@keyframes bounce-left{0%,10%,25%,40%,50%{-webkit-transform:translateX(0);transform:translateX(0)}20%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}30%{-webkit-transform:translateX(5px);transform:translateX(5px)}}@-webkit-keyframes bounce-down{0%,10%,25%,40%,50%{-webkit-transform:translateY(0);transform:translateY(0)}20%{-webkit-transform:translateY(10px);transform:translateY(10px)}30%{-webkit-transform:translateY(-5px);transform:translateY(-5px)}}@keyframes bounce-down{0%,10%,25%,40%,50%{-webkit-transform:translateY(0);transform:translateY(0)}20%{-webkit-transform:translateY(10px);transform:translateY(10px)}30%{-webkit-transform:translateY(-5px);transform:translateY(-5px)}}.reveal .controls{bottom:12px;color:#000;display:none;font-size:10px;left:auto;pointer-events:none;position:absolute;right:12px;top:auto;z-index:11}.reveal .controls button{-webkit-tap-highlight-color:transparent;-webkit-appearance:none;background-color:transparent;border:0;color:currentColor;cursor:pointer;font-size:inherit;opacity:0;outline:0;padding:0;pointer-events:auto;position:absolute;-webkit-transform:scale(.9999);transform:scale(.9999);transition:color .2s ease,opacity .2s ease,-webkit-transform .2s ease;transition:color .2s ease,opacity .2s ease,transform .2s ease;transition:color .2s ease,opacity .2s ease,transform .2s ease,-webkit-transform .2s ease;visibility:hidden;z-index:2}.reveal .controls .controls-arrow:after,.reveal .controls .controls-arrow:before{background-color:currentColor;border-radius:.25em;content:"";height:.5em;left:0;position:absolute;top:0;-webkit-transform-origin:.2em 50%;transform-origin:.2em 50%;transition:all .15s ease,background-color .8s ease;width:2.6em;will-change:transform}.reveal .controls .controls-arrow{height:3.6em;position:relative;width:3.6em}.reveal .controls .controls-arrow:before{-webkit-transform:translateX(.5em) translateY(1.55em) rotate(45deg);transform:translateX(.5em) translateY(1.55em) rotate(45deg)}.reveal .controls .controls-arrow:after{-webkit-transform:translateX(.5em) translateY(1.55em) rotate(-45deg);transform:translateX(.5em) translateY(1.55em) rotate(-45deg)}.reveal .controls .controls-arrow:hover:before{-webkit-transform:translateX(.5em) translateY(1.55em) rotate(40deg);transform:translateX(.5em) translateY(1.55em) rotate(40deg)}.reveal .controls .controls-arrow:hover:after{-webkit-transform:translateX(.5em) translateY(1.55em) rotate(-40deg);transform:translateX(.5em) translateY(1.55em) rotate(-40deg)}.reveal .controls .controls-arrow:active:before{-webkit-transform:translateX(.5em) translateY(1.55em) rotate(36deg);transform:translateX(.5em) translateY(1.55em) rotate(36deg)}.reveal .controls .controls-arrow:active:after{-webkit-transform:translateX(.5em) translateY(1.55em) rotate(-36deg);transform:translateX(.5em) translateY(1.55em) rotate(-36deg)}.reveal .controls .navigate-left{bottom:3.2em;right:6.4em;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.reveal .controls .navigate-left.highlight{-webkit-animation:bounce-left 2s ease-out 50 both;animation:bounce-left 2s ease-out 50 both}.reveal .controls .navigate-right{bottom:3.2em;right:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.reveal .controls .navigate-right .controls-arrow{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.reveal .controls .navigate-right.highlight{-webkit-animation:bounce-right 2s ease-out 50 both;animation:bounce-right 2s ease-out 50 both}.reveal .controls .navigate-up{bottom:6.4em;right:3.2em;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.reveal .controls .navigate-up .controls-arrow{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.reveal .controls .navigate-down{bottom:-1.4em;padding-bottom:1.4em;right:3.2em;-webkit-transform:translateY(10px);transform:translateY(10px)}.reveal .controls .navigate-down .controls-arrow{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.reveal .controls .navigate-down.highlight{-webkit-animation:bounce-down 2s ease-out 50 both;animation:bounce-down 2s ease-out 50 both}.reveal .controls[data-controls-back-arrows=faded] .navigate-up.enabled{opacity:.3}.reveal .controls[data-controls-back-arrows=faded] .navigate-up.enabled:hover{opacity:1}.reveal .controls[data-controls-back-arrows=hidden] .navigate-up.enabled{opacity:0;visibility:hidden}.reveal .controls .enabled{cursor:pointer;opacity:.9;-webkit-transform:none;transform:none;visibility:visible}.reveal .controls .enabled.fragmented{opacity:.5}.reveal .controls .enabled.fragmented:hover,.reveal .controls .enabled:hover{opacity:1}.reveal:not(.rtl) .controls[data-controls-back-arrows=faded] .navigate-left.enabled{opacity:.3}.reveal:not(.rtl) .controls[data-controls-back-arrows=faded] .navigate-left.enabled:hover{opacity:1}.reveal:not(.rtl) .controls[data-controls-back-arrows=hidden] .navigate-left.enabled{opacity:0;visibility:hidden}.reveal.rtl .controls[data-controls-back-arrows=faded] .navigate-right.enabled{opacity:.3}.reveal.rtl .controls[data-controls-back-arrows=faded] .navigate-right.enabled:hover{opacity:1}.reveal.rtl .controls[data-controls-back-arrows=hidden] .navigate-right.enabled{opacity:0;visibility:hidden}.reveal[data-navigation-mode=linear].has-horizontal-slides .navigate-down,.reveal[data-navigation-mode=linear].has-horizontal-slides .navigate-up{display:none}.reveal:not(.has-vertical-slides) .controls .navigate-left,.reveal[data-navigation-mode=linear].has-horizontal-slides .navigate-left{bottom:1.4em;right:5.5em}.reveal:not(.has-vertical-slides) .controls .navigate-right,.reveal[data-navigation-mode=linear].has-horizontal-slides .navigate-right{bottom:1.4em;right:.5em}.reveal:not(.has-horizontal-slides) .controls .navigate-up{bottom:5em;right:1.4em}.reveal:not(.has-horizontal-slides) .controls .navigate-down{bottom:.5em;right:1.4em}.reveal.has-dark-background .controls{color:#fff}.reveal.has-light-background .controls{color:#000}.reveal.no-hover .controls .controls-arrow:active:before,.reveal.no-hover .controls .controls-arrow:hover:before{-webkit-transform:translateX(.5em) translateY(1.55em) rotate(45deg);transform:translateX(.5em) translateY(1.55em) rotate(45deg)}.reveal.no-hover .controls .controls-arrow:active:after,.reveal.no-hover .controls .controls-arrow:hover:after{-webkit-transform:translateX(.5em) translateY(1.55em) rotate(-45deg);transform:translateX(.5em) translateY(1.55em) rotate(-45deg)}@media screen and (min-width:500px){.reveal .controls[data-controls-layout=edges]{bottom:0;left:0;right:0;top:0}.reveal .controls[data-controls-layout=edges] .navigate-down,.reveal .controls[data-controls-layout=edges] .navigate-left,.reveal .controls[data-controls-layout=edges] .navigate-right,.reveal .controls[data-controls-layout=edges] .navigate-up{bottom:auto;right:auto}.reveal .controls[data-controls-layout=edges] .navigate-left{left:.8em;margin-top:-1.8em;top:50%}.reveal .controls[data-controls-layout=edges] .navigate-right{margin-top:-1.8em;right:.8em;top:50%}.reveal .controls[data-controls-layout=edges] .navigate-up{left:50%;margin-left:-1.8em;top:.8em}.reveal .controls[data-controls-layout=edges] .navigate-down{bottom:-.3em;left:50%;margin-left:-1.8em}}.reveal .progress{background-color:rgba(0,0,0,.2);bottom:0;color:#fff;display:none;height:3px;left:0;position:absolute;width:100%;z-index:10}.reveal .progress:after{content:"";display:block;height:10px;position:absolute;top:-10px;width:100%}.reveal .progress span{background-color:currentColor;display:block;height:100%;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:0 0;transform-origin:0 0;transition:-webkit-transform .8s cubic-bezier(.26,.86,.44,.985);transition:transform .8s cubic-bezier(.26,.86,.44,.985);transition:transform .8s cubic-bezier(.26,.86,.44,.985),-webkit-transform .8s cubic-bezier(.26,.86,.44,.985);width:100%}.reveal .slide-number{background-color:rgba(0,0,0,.4);bottom:8px;color:#fff;display:block;font-family:Helvetica,sans-serif;font-size:12px;line-height:1;padding:5px;position:absolute;right:8px;z-index:31}.reveal .slide-number a{color:currentColor}.reveal .slide-number-delimiter{margin:0 3px}.reveal{height:100%;overflow:hidden;position:relative;touch-action:pinch-zoom;width:100%}.reveal.embedded{touch-action:pan-y}.reveal .slides{bottom:0;height:100%;left:0;margin:auto;overflow:visible;-webkit-perspective:600px;perspective:600px;-webkit-perspective-origin:50% 40%;perspective-origin:50% 40%;pointer-events:none;position:absolute;right:0;text-align:center;top:0;width:100%;z-index:1}.reveal .slides>section{-webkit-perspective:600px;perspective:600px}.reveal .slides>section,.reveal .slides>section>section{display:none;pointer-events:auto;position:absolute;-webkit-transform-style:flat;transform-style:flat;transition:visibility .8s cubic-bezier(.26,.86,.44,.985),opacity .8s cubic-bezier(.26,.86,.44,.985),-webkit-transform-origin .8s cubic-bezier(.26,.86,.44,.985),-webkit-transform .8s cubic-bezier(.26,.86,.44,.985);transition:transform-origin .8s cubic-bezier(.26,.86,.44,.985),transform .8s cubic-bezier(.26,.86,.44,.985),visibility .8s cubic-bezier(.26,.86,.44,.985),opacity .8s cubic-bezier(.26,.86,.44,.985);transition:transform-origin .8s cubic-bezier(.26,.86,.44,.985),transform .8s cubic-bezier(.26,.86,.44,.985),visibility .8s cubic-bezier(.26,.86,.44,.985),opacity .8s cubic-bezier(.26,.86,.44,.985),-webkit-transform-origin .8s cubic-bezier(.26,.86,.44,.985),-webkit-transform .8s cubic-bezier(.26,.86,.44,.985);width:100%;z-index:10}.reveal[data-transition-speed=fast] .slides section{transition-duration:.4s}.reveal[data-transition-speed=slow] .slides section{transition-duration:1.2s}.reveal .slides section[data-transition-speed=fast]{transition-duration:.4s}.reveal .slides section[data-transition-speed=slow]{transition-duration:1.2s}.reveal .slides>section.stack{height:100%;padding-bottom:0;padding-top:0;pointer-events:none}.reveal .slides>section.present,.reveal .slides>section>section.present{display:block;opacity:1;z-index:11}.reveal .slides>section:empty,.reveal .slides>section>section:empty,.reveal .slides>section>section[data-background-interactive],.reveal .slides>section[data-background-interactive]{pointer-events:none}.reveal.center,.reveal.center .slides,.reveal.center .slides section{min-height:0!important}.reveal .slides>section:not(.present),.reveal .slides>section>section:not(.present){pointer-events:none}.reveal.overview .slides>section,.reveal.overview .slides>section>section{pointer-events:auto}.reveal .slides>section.future,.reveal .slides>section.past,.reveal .slides>section>section.future,.reveal .slides>section>section.past{opacity:0}.reveal .slides>section[data-transition=slide].past,.reveal .slides>section[data-transition~=slide-out].past,.reveal.slide .slides>section:not([data-transition]).past{-webkit-transform:translate(-150%);transform:translate(-150%)}.reveal .slides>section[data-transition=slide].future,.reveal .slides>section[data-transition~=slide-in].future,.reveal.slide .slides>section:not([data-transition]).future{-webkit-transform:translate(150%);transform:translate(150%)}.reveal .slides>section>section[data-transition=slide].past,.reveal .slides>section>section[data-transition~=slide-out].past,.reveal.slide .slides>section>section:not([data-transition]).past{-webkit-transform:translateY(-150%);transform:translateY(-150%)}.reveal .slides>section>section[data-transition=slide].future,.reveal .slides>section>section[data-transition~=slide-in].future,.reveal.slide .slides>section>section:not([data-transition]).future{-webkit-transform:translateY(150%);transform:translateY(150%)}.reveal .slides>section[data-transition=linear].past,.reveal .slides>section[data-transition~=linear-out].past,.reveal.linear .slides>section:not([data-transition]).past{-webkit-transform:translate(-150%);transform:translate(-150%)}.reveal .slides>section[data-transition=linear].future,.reveal .slides>section[data-transition~=linear-in].future,.reveal.linear .slides>section:not([data-transition]).future{-webkit-transform:translate(150%);transform:translate(150%)}.reveal .slides>section>section[data-transition=linear].past,.reveal .slides>section>section[data-transition~=linear-out].past,.reveal.linear .slides>section>section:not([data-transition]).past{-webkit-transform:translateY(-150%);transform:translateY(-150%)}.reveal .slides>section>section[data-transition=linear].future,.reveal .slides>section>section[data-transition~=linear-in].future,.reveal.linear .slides>section>section:not([data-transition]).future{-webkit-transform:translateY(150%);transform:translateY(150%)}.reveal .slides section[data-transition=default].stack,.reveal.default .slides section.stack{-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.reveal .slides>section[data-transition=default].past,.reveal .slides>section[data-transition~=default-out].past,.reveal.default .slides>section:not([data-transition]).past{-webkit-transform:translate3d(-100%,0,0) rotateY(-90deg) translate3d(-100%,0,0);transform:translate3d(-100%,0,0) rotateY(-90deg) translate3d(-100%,0,0)}.reveal .slides>section[data-transition=default].future,.reveal .slides>section[data-transition~=default-in].future,.reveal.default .slides>section:not([data-transition]).future{-webkit-transform:translate3d(100%,0,0) rotateY(90deg) translate3d(100%,0,0);transform:translate3d(100%,0,0) rotateY(90deg) translate3d(100%,0,0)}.reveal .slides>section>section[data-transition=default].past,.reveal .slides>section>section[data-transition~=default-out].past,.reveal.default .slides>section>section:not([data-transition]).past{-webkit-transform:translate3d(0,-300px,0) rotateX(70deg) translate3d(0,-300px,0);transform:translate3d(0,-300px,0) rotateX(70deg) translate3d(0,-300px,0)}.reveal .slides>section>section[data-transition=default].future,.reveal .slides>section>section[data-transition~=default-in].future,.reveal.default .slides>section>section:not([data-transition]).future{-webkit-transform:translate3d(0,300px,0) rotateX(-70deg) translate3d(0,300px,0);transform:translate3d(0,300px,0) rotateX(-70deg) translate3d(0,300px,0)}.reveal .slides section[data-transition=convex].stack,.reveal.convex .slides section.stack{-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.reveal .slides>section[data-transition=convex].past,.reveal .slides>section[data-transition~=convex-out].past,.reveal.convex .slides>section:not([data-transition]).past{-webkit-transform:translate3d(-100%,0,0) rotateY(-90deg) translate3d(-100%,0,0);transform:translate3d(-100%,0,0) rotateY(-90deg) translate3d(-100%,0,0)}.reveal .slides>section[data-transition=convex].future,.reveal .slides>section[data-transition~=convex-in].future,.reveal.convex .slides>section:not([data-transition]).future{-webkit-transform:translate3d(100%,0,0) rotateY(90deg) translate3d(100%,0,0);transform:translate3d(100%,0,0) rotateY(90deg) translate3d(100%,0,0)}.reveal .slides>section>section[data-transition=convex].past,.reveal .slides>section>section[data-transition~=convex-out].past,.reveal.convex .slides>section>section:not([data-transition]).past{-webkit-transform:translate3d(0,-300px,0) rotateX(70deg) translate3d(0,-300px,0);transform:translate3d(0,-300px,0) rotateX(70deg) translate3d(0,-300px,0)}.reveal .slides>section>section[data-transition=convex].future,.reveal .slides>section>section[data-transition~=convex-in].future,.reveal.convex .slides>section>section:not([data-transition]).future{-webkit-transform:translate3d(0,300px,0) rotateX(-70deg) translate3d(0,300px,0);transform:translate3d(0,300px,0) rotateX(-70deg) translate3d(0,300px,0)}.reveal .slides section[data-transition=concave].stack,.reveal.concave .slides section.stack{-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.reveal .slides>section[data-transition=concave].past,.reveal .slides>section[data-transition~=concave-out].past,.reveal.concave .slides>section:not([data-transition]).past{-webkit-transform:translate3d(-100%,0,0) rotateY(90deg) translate3d(-100%,0,0);transform:translate3d(-100%,0,0) rotateY(90deg) translate3d(-100%,0,0)}.reveal .slides>section[data-transition=concave].future,.reveal .slides>section[data-transition~=concave-in].future,.reveal.concave .slides>section:not([data-transition]).future{-webkit-transform:translate3d(100%,0,0) rotateY(-90deg) translate3d(100%,0,0);transform:translate3d(100%,0,0) rotateY(-90deg) translate3d(100%,0,0)}.reveal .slides>section>section[data-transition=concave].past,.reveal .slides>section>section[data-transition~=concave-out].past,.reveal.concave .slides>section>section:not([data-transition]).past{-webkit-transform:translate3d(0,-80%,0) rotateX(-70deg) translate3d(0,-80%,0);transform:translate3d(0,-80%,0) rotateX(-70deg) translate3d(0,-80%,0)}.reveal .slides>section>section[data-transition=concave].future,.reveal .slides>section>section[data-transition~=concave-in].future,.reveal.concave .slides>section>section:not([data-transition]).future{-webkit-transform:translate3d(0,80%,0) rotateX(70deg) translate3d(0,80%,0);transform:translate3d(0,80%,0) rotateX(70deg) translate3d(0,80%,0)}.reveal .slides section[data-transition=zoom],.reveal.zoom .slides section:not([data-transition]){transition-timing-function:ease}.reveal .slides>section[data-transition=zoom].past,.reveal .slides>section[data-transition~=zoom-out].past,.reveal.zoom .slides>section:not([data-transition]).past{-webkit-transform:scale(16);transform:scale(16);visibility:hidden}.reveal .slides>section[data-transition=zoom].future,.reveal .slides>section[data-transition~=zoom-in].future,.reveal.zoom .slides>section:not([data-transition]).future{-webkit-transform:scale(.2);transform:scale(.2);visibility:hidden}.reveal .slides>section>section[data-transition=zoom].past,.reveal .slides>section>section[data-transition~=zoom-out].past,.reveal.zoom .slides>section>section:not([data-transition]).past{-webkit-transform:scale(16);transform:scale(16)}.reveal .slides>section>section[data-transition=zoom].future,.reveal .slides>section>section[data-transition~=zoom-in].future,.reveal.zoom .slides>section>section:not([data-transition]).future{-webkit-transform:scale(.2);transform:scale(.2)}.reveal.cube .slides{-webkit-perspective:1300px;perspective:1300px}.reveal.cube .slides section{-webkit-backface-visibility:hidden;backface-visibility:hidden;box-sizing:border-box;min-height:700px;padding:30px;-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.reveal.center.cube .slides section{min-height:0}.reveal.cube .slides section:not(.stack):before{background:rgba(0,0,0,.1);border-radius:4px;content:"";display:block;height:100%;left:0;position:absolute;top:0;-webkit-transform:translateZ(-20px);transform:translateZ(-20px);width:100%}.reveal.cube .slides section:not(.stack):after{background:0 0;border-radius:4px;bottom:0;box-shadow:0 95px 25px rgba(0,0,0,.2);content:"";display:block;height:30px;left:5%;position:absolute;-webkit-transform:translateZ(-90px) rotateX(65deg);transform:translateZ(-90px) rotateX(65deg);width:90%;z-index:1}.reveal.cube .slides>section.stack{background:0 0;padding:0}.reveal.cube .slides>section.past{-webkit-transform:translate3d(-100%,0,0) rotateY(-90deg);transform:translate3d(-100%,0,0) rotateY(-90deg);-webkit-transform-origin:100% 0;transform-origin:100% 0}.reveal.cube .slides>section.future{-webkit-transform:translate3d(100%,0,0) rotateY(90deg);transform:translate3d(100%,0,0) rotateY(90deg);-webkit-transform-origin:0 0;transform-origin:0 0}.reveal.cube .slides>section>section.past{-webkit-transform:translate3d(0,-100%,0) rotateX(90deg);transform:translate3d(0,-100%,0) rotateX(90deg);-webkit-transform-origin:0 100%;transform-origin:0 100%}.reveal.cube .slides>section>section.future{-webkit-transform:translate3d(0,100%,0) rotateX(-90deg);transform:translate3d(0,100%,0) rotateX(-90deg);-webkit-transform-origin:0 0;transform-origin:0 0}.reveal.page .slides{-webkit-perspective:3000px;perspective:3000px;-webkit-perspective-origin:0 50%;perspective-origin:0 50%}.reveal.page .slides section{box-sizing:border-box;min-height:700px;padding:30px;-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.reveal.page .slides section.past{z-index:12}.reveal.page .slides section:not(.stack):before{background:rgba(0,0,0,.1);content:"";display:block;height:100%;left:0;position:absolute;top:0;-webkit-transform:translateZ(-20px);transform:translateZ(-20px);width:100%}.reveal.page .slides section:not(.stack):after{background:0 0;border-radius:4px;bottom:0;box-shadow:0 95px 25px rgba(0,0,0,.2);content:"";display:block;height:30px;left:5%;position:absolute;-webkit-transform:translateZ(-90px) rotateX(65deg);width:90%;z-index:1}.reveal.page .slides>section.stack{background:0 0;padding:0}.reveal.page .slides>section.past{-webkit-transform:translate3d(-40%,0,0) rotateY(-80deg);transform:translate3d(-40%,0,0) rotateY(-80deg);-webkit-transform-origin:0 0;transform-origin:0 0}.reveal.page .slides>section.future{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transform-origin:100% 0;transform-origin:100% 0}.reveal.page .slides>section>section.past{-webkit-transform:translate3d(0,-40%,0) rotateX(80deg);transform:translate3d(0,-40%,0) rotateX(80deg);-webkit-transform-origin:0 0;transform-origin:0 0}.reveal.page .slides>section>section.future{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transform-origin:0 100%;transform-origin:0 100%}.reveal .slides section[data-transition=fade],.reveal.fade .slides section:not([data-transition]),.reveal.fade .slides>section>section:not([data-transition]){-webkit-transform:none;transform:none;transition:opacity .5s}.reveal.fade.overview .slides section,.reveal.fade.overview .slides>section>section{transition:none}.reveal .slides section[data-transition=none],.reveal.none .slides section:not([data-transition]){-webkit-transform:none;transform:none;transition:none}.reveal .pause-overlay{background:#000;height:100%;left:0;opacity:0;position:absolute;top:0;transition:all 1s ease;visibility:hidden;width:100%;z-index:100}.reveal .pause-overlay .resume-button{background:0 0;border:2px solid #ccc;border-radius:2px;bottom:20px;color:#ccc;cursor:pointer;font-size:16px;padding:6px 14px;position:absolute;right:20px}.reveal .pause-overlay .resume-button:hover{border-color:#fff;color:#fff}.reveal.paused .pause-overlay{opacity:1;visibility:visible}.reveal .no-transition,.reveal .no-transition *,.reveal .slides.disable-slide-transitions section{transition:none!important}.reveal .slides.disable-slide-transitions section{-webkit-transform:none!important;transform:none!important}.reveal .backgrounds{height:100%;left:0;-webkit-perspective:600px;perspective:600px;position:absolute;top:0;width:100%}.reveal .slide-background{background-color:transparent;display:none;height:100%;opacity:0;overflow:hidden;position:absolute;transition:all .8s cubic-bezier(.26,.86,.44,.985);visibility:hidden;width:100%}.reveal .slide-background-content{background-position:50% 50%;background-repeat:no-repeat;background-size:cover;height:100%;position:absolute;width:100%}.reveal .slide-background.stack{display:block}.reveal .slide-background.present{opacity:1;visibility:visible;z-index:2}.print-pdf .reveal .slide-background{opacity:1!important;visibility:visible!important}.reveal .slide-background video{height:100%;left:0;max-height:none;max-width:none;-o-object-fit:cover;object-fit:cover;position:absolute;top:0;width:100%}.reveal .slide-background[data-background-size=contain] video{-o-object-fit:contain;object-fit:contain}.reveal>.backgrounds .slide-background[data-background-transition=none],.reveal[data-background-transition=none]>.backgrounds .slide-background:not([data-background-transition]){transition:none}.reveal>.backgrounds .slide-background[data-background-transition=slide],.reveal[data-background-transition=slide]>.backgrounds .slide-background:not([data-background-transition]){opacity:1}.reveal>.backgrounds .slide-background.past[data-background-transition=slide],.reveal[data-background-transition=slide]>.backgrounds .slide-background.past:not([data-background-transition]){-webkit-transform:translate(-100%);transform:translate(-100%)}.reveal>.backgrounds .slide-background.future[data-background-transition=slide],.reveal[data-background-transition=slide]>.backgrounds .slide-background.future:not([data-background-transition]){-webkit-transform:translate(100%);transform:translate(100%)}.reveal>.backgrounds .slide-background>.slide-background.past[data-background-transition=slide],.reveal[data-background-transition=slide]>.backgrounds .slide-background>.slide-background.past:not([data-background-transition]){-webkit-transform:translateY(-100%);transform:translateY(-100%)}.reveal>.backgrounds .slide-background>.slide-background.future[data-background-transition=slide],.reveal[data-background-transition=slide]>.backgrounds .slide-background>.slide-background.future:not([data-background-transition]){-webkit-transform:translateY(100%);transform:translateY(100%)}.reveal>.backgrounds .slide-background.past[data-background-transition=convex],.reveal[data-background-transition=convex]>.backgrounds .slide-background.past:not([data-background-transition]){opacity:0;-webkit-transform:translate3d(-100%,0,0) rotateY(-90deg) translate3d(-100%,0,0);transform:translate3d(-100%,0,0) rotateY(-90deg) translate3d(-100%,0,0)}.reveal>.backgrounds .slide-background.future[data-background-transition=convex],.reveal[data-background-transition=convex]>.backgrounds .slide-background.future:not([data-background-transition]){opacity:0;-webkit-transform:translate3d(100%,0,0) rotateY(90deg) translate3d(100%,0,0);transform:translate3d(100%,0,0) rotateY(90deg) translate3d(100%,0,0)}.reveal>.backgrounds .slide-background>.slide-background.past[data-background-transition=convex],.reveal[data-background-transition=convex]>.backgrounds .slide-background>.slide-background.past:not([data-background-transition]){opacity:0;-webkit-transform:translate3d(0,-100%,0) rotateX(90deg) translate3d(0,-100%,0);transform:translate3d(0,-100%,0) rotateX(90deg) translate3d(0,-100%,0)}.reveal>.backgrounds .slide-background>.slide-background.future[data-background-transition=convex],.reveal[data-background-transition=convex]>.backgrounds .slide-background>.slide-background.future:not([data-background-transition]){opacity:0;-webkit-transform:translate3d(0,100%,0) rotateX(-90deg) translate3d(0,100%,0);transform:translate3d(0,100%,0) rotateX(-90deg) translate3d(0,100%,0)}.reveal>.backgrounds .slide-background.past[data-background-transition=concave],.reveal[data-background-transition=concave]>.backgrounds .slide-background.past:not([data-background-transition]){opacity:0;-webkit-transform:translate3d(-100%,0,0) rotateY(90deg) translate3d(-100%,0,0);transform:translate3d(-100%,0,0) rotateY(90deg) translate3d(-100%,0,0)}.reveal>.backgrounds .slide-background.future[data-background-transition=concave],.reveal[data-background-transition=concave]>.backgrounds .slide-background.future:not([data-background-transition]){opacity:0;-webkit-transform:translate3d(100%,0,0) rotateY(-90deg) translate3d(100%,0,0);transform:translate3d(100%,0,0) rotateY(-90deg) translate3d(100%,0,0)}.reveal>.backgrounds .slide-background>.slide-background.past[data-background-transition=concave],.reveal[data-background-transition=concave]>.backgrounds .slide-background>.slide-background.past:not([data-background-transition]){opacity:0;-webkit-transform:translate3d(0,-100%,0) rotateX(-90deg) translate3d(0,-100%,0);transform:translate3d(0,-100%,0) rotateX(-90deg) translate3d(0,-100%,0)}.reveal>.backgrounds .slide-background>.slide-background.future[data-background-transition=concave],.reveal[data-background-transition=concave]>.backgrounds .slide-background>.slide-background.future:not([data-background-transition]){opacity:0;-webkit-transform:translate3d(0,100%,0) rotateX(90deg) translate3d(0,100%,0);transform:translate3d(0,100%,0) rotateX(90deg) translate3d(0,100%,0)}.reveal>.backgrounds .slide-background[data-background-transition=zoom],.reveal[data-background-transition=zoom]>.backgrounds .slide-background:not([data-background-transition]){transition-timing-function:ease}.reveal>.backgrounds .slide-background.past[data-background-transition=zoom],.reveal[data-background-transition=zoom]>.backgrounds .slide-background.past:not([data-background-transition]){opacity:0;-webkit-transform:scale(16);transform:scale(16);visibility:hidden}.reveal>.backgrounds .slide-background.future[data-background-transition=zoom],.reveal[data-background-transition=zoom]>.backgrounds .slide-background.future:not([data-background-transition]){opacity:0;-webkit-transform:scale(.2);transform:scale(.2);visibility:hidden}.reveal>.backgrounds .slide-background>.slide-background.past[data-background-transition=zoom],.reveal[data-background-transition=zoom]>.backgrounds .slide-background>.slide-background.past:not([data-background-transition]){opacity:0;-webkit-transform:scale(16);transform:scale(16);visibility:hidden}.reveal>.backgrounds .slide-background>.slide-background.future[data-background-transition=zoom],.reveal[data-background-transition=zoom]>.backgrounds .slide-background>.slide-background.future:not([data-background-transition]){opacity:0;-webkit-transform:scale(.2);transform:scale(.2);visibility:hidden}.reveal[data-transition-speed=fast]>.backgrounds .slide-background{transition-duration:.4s}.reveal[data-transition-speed=slow]>.backgrounds .slide-background{transition-duration:1.2s}.reveal [data-auto-animate-target^=unmatched]{will-change:opacity}.reveal section[data-auto-animate]:not(.stack):not([data-auto-animate=running]) [data-auto-animate-target^=unmatched]{opacity:0}.reveal.overview{-webkit-perspective:700px;perspective:700px;-webkit-perspective-origin:50% 50%;perspective-origin:50% 50%}.reveal.overview .slides{-moz-transform-style:preserve-3d}.reveal.overview .slides section{box-sizing:border-box;cursor:pointer;height:100%;opacity:1!important;overflow:hidden;top:0!important;visibility:visible!important}.reveal.overview .slides section.present,.reveal.overview .slides section:hover{outline:10px solid hsla(0,0%,59%,.4);outline-offset:10px}.reveal.overview .slides section .fragment{opacity:1;transition:none}.reveal.overview .slides section:after,.reveal.overview .slides section:before{display:none!important}.reveal.overview .slides>section.stack{background:0 0;outline:0;overflow:visible;padding:0;top:0!important}.reveal.overview .backgrounds{-webkit-perspective:inherit;perspective:inherit;-moz-transform-style:preserve-3d}.reveal.overview .backgrounds .slide-background{opacity:1;outline:10px solid hsla(0,0%,59%,.1);outline-offset:10px;visibility:visible}.reveal.overview .backgrounds .slide-background.stack{overflow:visible}.reveal.overview .backgrounds .slide-background,.reveal.overview .slides section,.reveal.overview-deactivating .backgrounds .slide-background,.reveal.overview-deactivating .slides section{transition:none}.reveal.rtl .slides,.reveal.rtl .slides h1,.reveal.rtl .slides h2,.reveal.rtl .slides h3,.reveal.rtl .slides h4,.reveal.rtl .slides h5,.reveal.rtl .slides h6{direction:rtl;font-family:sans-serif}.reveal.rtl code,.reveal.rtl pre{direction:ltr}.reveal.rtl ol,.reveal.rtl ul{text-align:right}.reveal.rtl .progress span{-webkit-transform-origin:100% 0;transform-origin:100% 0}.reveal.has-parallax-background .backgrounds{transition:all .8s ease}.reveal.has-parallax-background[data-transition-speed=fast] .backgrounds{transition-duration:.4s}.reveal.has-parallax-background[data-transition-speed=slow] .backgrounds{transition-duration:1.2s}.reveal>.overlay{background:rgba(0,0,0,.9);height:100%;left:0;position:absolute;top:0;transition:all .3s ease;width:100%;z-index:1000}.reveal>.overlay .spinner{background-image:url(data:image/gif;base64,R0lGODlhIAAgAPMAAJmZmf%2F%2F%2F6%2Bvr8nJybW1tcDAwOjo6Nvb26ioqKOjo7Ozs%2FLy8vz8%2FAAAAAAAAAAAACH%2FC05FVFNDQVBFMi4wAwEAAAAh%2FhpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh%2BQQJCgAAACwAAAAAIAAgAAAE5xDISWlhperN52JLhSSdRgwVo1ICQZRUsiwHpTJT4iowNS8vyW2icCF6k8HMMBkCEDskxTBDAZwuAkkqIfxIQyhBQBFvAQSDITM5VDW6XNE4KagNh6Bgwe60smQUB3d4Rz1ZBApnFASDd0hihh12BkE9kjAJVlycXIg7CQIFA6SlnJ87paqbSKiKoqusnbMdmDC2tXQlkUhziYtyWTxIfy6BE8WJt5YJvpJivxNaGmLHT0VnOgSYf0dZXS7APdpB309RnHOG5gDqXGLDaC457D1zZ%2FV%2FnmOM82XiHRLYKhKP1oZmADdEAAAh%2BQQJCgAAACwAAAAAIAAgAAAE6hDISWlZpOrNp1lGNRSdRpDUolIGw5RUYhhHukqFu8DsrEyqnWThGvAmhVlteBvojpTDDBUEIFwMFBRAmBkSgOrBFZogCASwBDEY%2FCZSg7GSE0gSCjQBMVG023xWBhklAnoEdhQEfyNqMIcKjhRsjEdnezB%2BA4k8gTwJhFuiW4dokXiloUepBAp5qaKpp6%2BHo7aWW54wl7obvEe0kRuoplCGepwSx2jJvqHEmGt6whJpGpfJCHmOoNHKaHx61WiSR92E4lbFoq%2BB6QDtuetcaBPnW6%2BO7wDHpIiK9SaVK5GgV543tzjgGcghAgAh%2BQQJCgAAACwAAAAAIAAgAAAE7hDISSkxpOrN5zFHNWRdhSiVoVLHspRUMoyUakyEe8PTPCATW9A14E0UvuAKMNAZKYUZCiBMuBakSQKG8G2FzUWox2AUtAQFcBKlVQoLgQReZhQlCIJesQXI5B0CBnUMOxMCenoCfTCEWBsJColTMANldx15BGs8B5wlCZ9Po6OJkwmRpnqkqnuSrayqfKmqpLajoiW5HJq7FL1Gr2mMMcKUMIiJgIemy7xZtJsTmsM4xHiKv5KMCXqfyUCJEonXPN2rAOIAmsfB3uPoAK%2B%2BG%2Bw48edZPK%2BM6hLJpQg484enXIdQFSS1u6UhksENEQAAIfkECQoAAAAsAAAAACAAIAAABOcQyEmpGKLqzWcZRVUQnZYg1aBSh2GUVEIQ2aQOE%2BG%2BcD4ntpWkZQj1JIiZIogDFFyHI0UxQwFugMSOFIPJftfVAEoZLBbcLEFhlQiqGp1Vd140AUklUN3eCA51C1EWMzMCezCBBmkxVIVHBWd3HHl9JQOIJSdSnJ0TDKChCwUJjoWMPaGqDKannasMo6WnM562R5YluZRwur0wpgqZE7NKUm%2BFNRPIhjBJxKZteWuIBMN4zRMIVIhffcgojwCF117i4nlLnY5ztRLsnOk%2BaV%2BoJY7V7m76PdkS4trKcdg0Zc0tTcKkRAAAIfkECQoAAAAsAAAAACAAIAAABO4QyEkpKqjqzScpRaVkXZWQEximw1BSCUEIlDohrft6cpKCk5xid5MNJTaAIkekKGQkWyKHkvhKsR7ARmitkAYDYRIbUQRQjWBwJRzChi9CRlBcY1UN4g0%2FVNB0AlcvcAYHRyZPdEQFYV8ccwR5HWxEJ02YmRMLnJ1xCYp0Y5idpQuhopmmC2KgojKasUQDk5BNAwwMOh2RtRq5uQuPZKGIJQIGwAwGf6I0JXMpC8C7kXWDBINFMxS4DKMAWVWAGYsAdNqW5uaRxkSKJOZKaU3tPOBZ4DuK2LATgJhkPJMgTwKCdFjyPHEnKxFCDhEAACH5BAkKAAAALAAAAAAgACAAAATzEMhJaVKp6s2nIkolIJ2WkBShpkVRWqqQrhLSEu9MZJKK9y1ZrqYK9WiClmvoUaF8gIQSNeF1Er4MNFn4SRSDARWroAIETg1iVwuHjYB1kYc1mwruwXKC9gmsJXliGxc%2BXiUCby9ydh1sOSdMkpMTBpaXBzsfhoc5l58Gm5yToAaZhaOUqjkDgCWNHAULCwOLaTmzswadEqggQwgHuQsHIoZCHQMMQgQGubVEcxOPFAcMDAYUA85eWARmfSRQCdcMe0zeP1AAygwLlJtPNAAL19DARdPzBOWSm1brJBi45soRAWQAAkrQIykShQ9wVhHCwCQCACH5BAkKAAAALAAAAAAgACAAAATrEMhJaVKp6s2nIkqFZF2VIBWhUsJaTokqUCoBq%2BE71SRQeyqUToLA7VxF0JDyIQh%2FMVVPMt1ECZlfcjZJ9mIKoaTl1MRIl5o4CUKXOwmyrCInCKqcWtvadL2SYhyASyNDJ0uIiRMDjI0Fd30%2FiI2UA5GSS5UDj2l6NoqgOgN4gksEBgYFf0FDqKgHnyZ9OX8HrgYHdHpcHQULXAS2qKpENRg7eAMLC7kTBaixUYFkKAzWAAnLC7FLVxLWDBLKCwaKTULgEwbLA4hJtOkSBNqITT3xEgfLpBtzE%2FjiuL04RGEBgwWhShRgQExHBAAh%2BQQJCgAAACwAAAAAIAAgAAAE7xDISWlSqerNpyJKhWRdlSAVoVLCWk6JKlAqAavhO9UkUHsqlE6CwO1cRdCQ8iEIfzFVTzLdRAmZX3I2SfZiCqGk5dTESJeaOAlClzsJsqwiJwiqnFrb2nS9kmIcgEsjQydLiIlHehhpejaIjzh9eomSjZR%2BipslWIRLAgMDOR2DOqKogTB9pCUJBagDBXR6XB0EBkIIsaRsGGMMAxoDBgYHTKJiUYEGDAzHC9EACcUGkIgFzgwZ0QsSBcXHiQvOwgDdEwfFs0sDzt4S6BK4xYjkDOzn0unFeBzOBijIm1Dgmg5YFQwsCMjp1oJ8LyIAACH5BAkKAAAALAAAAAAgACAAAATwEMhJaVKp6s2nIkqFZF2VIBWhUsJaTokqUCoBq%2BE71SRQeyqUToLA7VxF0JDyIQh%2FMVVPMt1ECZlfcjZJ9mIKoaTl1MRIl5o4CUKXOwmyrCInCKqcWtvadL2SYhyASyNDJ0uIiUd6GGl6NoiPOH16iZKNlH6KmyWFOggHhEEvAwwMA0N9GBsEC6amhnVcEwavDAazGwIDaH1ipaYLBUTCGgQDA8NdHz0FpqgTBwsLqAbWAAnIA4FWKdMLGdYGEgraigbT0OITBcg5QwPT4xLrROZL6AuQAPUS7bxLpoWidY0JtxLHKhwwMJBTHgPKdEQAACH5BAkKAAAALAAAAAAgACAAAATrEMhJaVKp6s2nIkqFZF2VIBWhUsJaTokqUCoBq%2BE71SRQeyqUToLA7VxF0JDyIQh%2FMVVPMt1ECZlfcjZJ9mIKoaTl1MRIl5o4CUKXOwmyrCInCKqcWtvadL2SYhyASyNDJ0uIiUd6GAULDJCRiXo1CpGXDJOUjY%2BYip9DhToJA4RBLwMLCwVDfRgbBAaqqoZ1XBMHswsHtxtFaH1iqaoGNgAIxRpbFAgfPQSqpbgGBqUD1wBXeCYp1AYZ19JJOYgH1KwA4UBvQwXUBxPqVD9L3sbp2BNk2xvvFPJd%2BMFCN6HAAIKgNggY0KtEBAAh%2BQQJCgAAACwAAAAAIAAgAAAE6BDISWlSqerNpyJKhWRdlSAVoVLCWk6JKlAqAavhO9UkUHsqlE6CwO1cRdCQ8iEIfzFVTzLdRAmZX3I2SfYIDMaAFdTESJeaEDAIMxYFqrOUaNW4E4ObYcCXaiBVEgULe0NJaxxtYksjh2NLkZISgDgJhHthkpU4mW6blRiYmZOlh4JWkDqILwUGBnE6TYEbCgevr0N1gH4At7gHiRpFaLNrrq8HNgAJA70AWxQIH1%2BvsYMDAzZQPC9VCNkDWUhGkuE5PxJNwiUK4UfLzOlD4WvzAHaoG9nxPi5d%2BjYUqfAhhykOFwJWiAAAIfkECQoAAAAsAAAAACAAIAAABPAQyElpUqnqzaciSoVkXVUMFaFSwlpOCcMYlErAavhOMnNLNo8KsZsMZItJEIDIFSkLGQoQTNhIsFehRww2CQLKF0tYGKYSg%2BygsZIuNqJksKgbfgIGepNo2cIUB3V1B3IvNiBYNQaDSTtfhhx0CwVPI0UJe0%2Bbm4g5VgcGoqOcnjmjqDSdnhgEoamcsZuXO1aWQy8KAwOAuTYYGwi7w5h%2BKr0SJ8MFihpNbx%2B4Erq7BYBuzsdiH1jCAzoSfl0rVirNbRXlBBlLX%2BBP0XJLAPGzTkAuAOqb0WT5AH7OcdCm5B8TgRwSRKIHQtaLCwg1RAAAOwAAAAAAAAAAAA%3D%3D);display:block;height:32px;left:50%;margin:-16px 0 0 -16px;opacity:.6;position:absolute;top:50%;transition:all .3s ease;visibility:visible;width:32px;z-index:10}.reveal>.overlay header{box-sizing:border-box;left:0;padding:5px;position:absolute;top:0;width:100%;z-index:2}.reveal>.overlay header a{box-sizing:border-box;display:inline-block;float:right;height:40px;line-height:36px;opacity:.6;padding:0 10px;width:40px}.reveal>.overlay header a:hover{opacity:1}.reveal>.overlay header a .icon{background-position:50% 50%;background-repeat:no-repeat;background-size:100%;display:inline-block;height:20px;width:20px}.reveal>.overlay header a.close .icon{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABkklEQVRYR8WX4VHDMAxG6wnoJrABZQPYBCaBTWAD2g1gE5gg6OOsXuxIlr40d81dfrSJ9V4c2VLK7spHuTJ/5wpM07QXuXc5X0opX2tEJcadjHuV80li/FgxTIEK/5QBCICBD6xEhSMGHgQPgBgLiYVAB1dpSqKDawxTohFw4JSEA3clzgIBPCURwE2JucBR7rhPJJv5OpJwDX+SfDjgx1wACQeJG1aChP9K/IMmdZ8DtESV1WyP3Bt4MwM6sj4NMxMYiqUWHQu4KYA/SYkIjOsm3BXYWMKFDwU2khjCQ4ELJUJ4SmClRArOCmSXGuKma0fYD5CbzHxFpCSGAhfAVSSUGDUk2BWZaff2g6GE15BsBQ9nwmpIGDiyHQddwNTMKkbZaf9fajXQca1EX44puJZUsnY0ObGmITE3GVLCbEhQUjGVt146j6oasWN+49Vph2w1pZ5EansNZqKBm1txbU57iRRcZ86RWMDdWtBJUHBHwoQPi1GV+JCbntmvok7iTX4/Up9mgyTc/FJYDTcndgH/AA5A/CHsyEkVAAAAAElFTkSuQmCC)}.reveal>.overlay header a.external .icon{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAcElEQVRYR+2WSQoAIQwEzf8f7XiOMkUQxUPlGkM3hVmiQfQR9GYnH1SsAQlI4DiBqkCMoNb9y2e90IAEJPAcgdznU9+engMaeJ7Azh5Y1U67gAho4DqBqmB1buAf0MB1AlVBek83ZPkmJMGc1wAR+AAqod/B97TRpQAAAABJRU5ErkJggg==)}.reveal>.overlay .viewport{bottom:0;display:flex;left:0;position:absolute;right:0;top:50px}.reveal>.overlay.overlay-preview .viewport iframe{border:0;height:100%;max-height:100%;max-width:100%;opacity:0;transition:all .3s ease;visibility:hidden;width:100%}.reveal>.overlay.overlay-preview.loaded .viewport iframe{opacity:1;visibility:visible}.reveal>.overlay.overlay-preview.loaded .viewport-inner{left:0;letter-spacing:normal;position:absolute;text-align:center;top:45%;width:100%;z-index:-1}.reveal>.overlay.overlay-preview .x-frame-error{opacity:0;transition:opacity .3s ease .3s}.reveal>.overlay.overlay-preview.loaded .x-frame-error{opacity:1}.reveal>.overlay.overlay-preview.loaded .spinner{opacity:0;-webkit-transform:scale(.2);transform:scale(.2);visibility:hidden}.reveal>.overlay.overlay-help .viewport{color:#fff;overflow:auto}.reveal>.overlay.overlay-help .viewport .viewport-inner{letter-spacing:normal;margin:auto;padding:20px 20px 80px;text-align:center;width:600px}.reveal>.overlay.overlay-help .viewport .viewport-inner .title{font-size:20px}.reveal>.overlay.overlay-help .viewport .viewport-inner table{border:1px solid #fff;border-collapse:collapse;font-size:16px}.reveal>.overlay.overlay-help .viewport .viewport-inner table td,.reveal>.overlay.overlay-help .viewport .viewport-inner table th{border:1px solid #fff;padding:14px;vertical-align:middle;width:200px}.reveal>.overlay.overlay-help .viewport .viewport-inner table th{padding-bottom:20px;padding-top:20px}.reveal .playback{-webkit-tap-highlight-color:transparent;bottom:20px;cursor:pointer;left:15px;position:absolute;transition:all .4s ease;z-index:30}.reveal.overview .playback{opacity:0;visibility:hidden}.reveal .hljs{min-height:100%}.reveal .hljs table{margin:initial}.reveal .hljs-ln-code,.reveal .hljs-ln-numbers{border:0;padding:0}.reveal .hljs-ln-numbers{opacity:.6;padding-right:.75em;text-align:right;vertical-align:top}.reveal .hljs.has-highlights tr:not(.highlight-line){opacity:.4}.reveal .hljs:not(:first-child).fragment{box-sizing:border-box;left:0;position:absolute;top:0;width:100%}.reveal pre[data-auto-animate-target]{overflow:hidden}.reveal pre[data-auto-animate-target] code{height:100%}.reveal .roll{display:inline-block;line-height:1.2;overflow:hidden;-webkit-perspective:400px;perspective:400px;-webkit-perspective-origin:50% 50%;perspective-origin:50% 50%;vertical-align:top}.reveal .roll:hover{background:0 0;text-shadow:none}.reveal .roll span{-webkit-backface-visibility:hidden;backface-visibility:hidden;display:block;padding:0 2px;pointer-events:none;position:relative;-webkit-transform-origin:50% 0;transform-origin:50% 0;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;transition:all .4s ease}.reveal .roll:hover span{background:rgba(0,0,0,.5);-webkit-transform:translateZ(-45px) rotateX(90deg);transform:translateZ(-45px) rotateX(90deg)}.reveal .roll span:after{-webkit-backface-visibility:hidden;backface-visibility:hidden;content:attr(data-title);display:block;left:0;padding:0 2px;position:absolute;top:0;-webkit-transform:translate3d(0,110%,0) rotateX(-90deg);transform:translate3d(0,110%,0) rotateX(-90deg);-webkit-transform-origin:50% 0;transform-origin:50% 0}.reveal aside.notes{display:none}.reveal .speaker-notes{-webkit-overflow-scrolling:touch;background-color:#f5f5f5;border:1px solid rgba(0,0,0,.05);box-sizing:border-box;color:#222;display:none;font-family:Helvetica,sans-serif;font-size:18px;height:100%;left:100%;line-height:1.4;overflow:auto;padding:14px 18px;position:absolute;text-align:left;top:0;width:33.3333333333%;z-index:1}.reveal .speaker-notes .notes-placeholder{color:#ccc;font-style:italic}.reveal .speaker-notes:focus{outline:0}.reveal .speaker-notes:before{content:"Speaker notes";display:block;margin-bottom:10px;opacity:.5}.reveal.show-notes{max-width:75%;overflow:visible}.reveal.show-notes .speaker-notes{display:block}@media screen and (min-width:1600px){.reveal .speaker-notes{font-size:20px}}@media screen and (max-width:1024px){.reveal.show-notes{border-left:0;max-height:70%;max-height:70vh;max-width:none;overflow:visible}.reveal.show-notes .speaker-notes{border:0;height:30vh;left:0;top:100%;width:100%}}@media screen and (max-width:600px){.reveal.show-notes{max-height:60%;max-height:60vh}.reveal.show-notes .speaker-notes{height:40vh;top:100%}.reveal .speaker-notes{font-size:14px}}.zoomed .reveal *,.zoomed .reveal :after,.zoomed .reveal :before{-webkit-backface-visibility:visible!important;backface-visibility:visible!important}.zoomed .reveal .controls,.zoomed .reveal .progress{opacity:0}.zoomed .reveal .roll span{background:0 0}.zoomed .reveal .roll span:after{visibility:hidden}html.print-pdf *{-webkit-print-color-adjust:exact}html.print-pdf{height:100%;overflow:visible;width:100%}html.print-pdf body{border:0;float:none!important;margin:0 auto!important;overflow:visible;padding:0}html.print-pdf .nestedarrow,html.print-pdf .reveal .controls,html.print-pdf .reveal .playback,html.print-pdf .reveal .progress,html.print-pdf .reveal.overview,html.print-pdf .state-background{display:none!important}html.print-pdf .reveal pre code{font-family:Courier,Courier New,monospace!important;overflow:hidden!important}html.print-pdf .reveal{height:auto!important;overflow:hidden!important;width:auto!important}html.print-pdf .reveal .slides{zoom:1!important;display:block;height:auto!important;left:auto;margin:0!important;overflow:visible;padding:0!important;-webkit-perspective:none;perspective:none;-webkit-perspective-origin:50% 50%;perspective-origin:50% 50%;pointer-events:auto;position:static;top:auto;width:100%!important}html.print-pdf .reveal .slides .pdf-page{overflow:hidden;page-break-after:always;position:relative;z-index:1}html.print-pdf .reveal .slides section{box-sizing:border-box!important;display:block!important;margin:0!important;min-height:1px;opacity:1!important;padding:0!important;position:absolute!important;-webkit-transform:none!important;transform:none!important;-webkit-transform-style:flat!important;transform-style:flat!important;visibility:visible!important}html.print-pdf .reveal section.stack{height:auto!important;margin:0!important;min-height:auto!important;padding:0!important;page-break-after:avoid!important;position:relative!important}html.print-pdf .reveal img{box-shadow:none}html.print-pdf .reveal .backgrounds{display:none}html.print-pdf .reveal .slide-background{display:block!important;height:100%;left:0;position:absolute;top:0;width:100%;z-index:auto!important}html.print-pdf .reveal.show-notes{max-height:none;max-width:none}html.print-pdf .reveal .speaker-notes-pdf{bottom:auto;display:block;height:auto;left:auto;max-height:none;right:auto;top:auto;width:100%;z-index:100}html.print-pdf .reveal .speaker-notes-pdf[data-layout=separate-page]{background-color:transparent;border:0;color:inherit;padding:20px;page-break-after:always;position:relative}html.print-pdf .reveal .slide-number-pdf{display:block;font-size:14px;position:absolute}html.print-pdf .aria-status{display:none}@media print{html:not(.print-pdf),html:not(.print-pdf) body{background:#fff;height:auto;overflow:visible;width:auto}html:not(.print-pdf) body{border:0;float:none!important;font-size:20pt;margin:0 5%;padding:0}html:not(.print-pdf) .controls,html:not(.print-pdf) .fork-reveal,html:not(.print-pdf) .nestedarrow,html:not(.print-pdf) .reveal .backgrounds,html:not(.print-pdf) .reveal .progress,html:not(.print-pdf) .reveal .slide-number,html:not(.print-pdf) .share-reveal,html:not(.print-pdf) .state-background{display:none!important}html:not(.print-pdf) body,html:not(.print-pdf) li,html:not(.print-pdf) p,html:not(.print-pdf) td{color:#000;font-size:20pt!important}html:not(.print-pdf) h1,html:not(.print-pdf) h2,html:not(.print-pdf) h3,html:not(.print-pdf) h4,html:not(.print-pdf) h5,html:not(.print-pdf) h6{color:#000!important;height:auto;letter-spacing:normal;line-height:normal;text-align:left}html:not(.print-pdf) h1{font-size:28pt!important}html:not(.print-pdf) h2{font-size:24pt!important}html:not(.print-pdf) h3,html:not(.print-pdf) h4{font-size:22pt!important}html:not(.print-pdf) h4{font-variant:small-caps}html:not(.print-pdf) h5{font-size:21pt!important}html:not(.print-pdf) h6{font-size:20pt!important;font-style:italic}html:not(.print-pdf) a:link,html:not(.print-pdf) a:visited{color:#000!important;font-weight:700;text-decoration:underline}html:not(.print-pdf) div,html:not(.print-pdf) ol,html:not(.print-pdf) p,html:not(.print-pdf) ul{display:block;height:auto;margin:0;overflow:visible;position:static;text-align:left!important;visibility:visible;width:auto}html:not(.print-pdf) .reveal pre,html:not(.print-pdf) .reveal table{margin-left:0;margin-right:0}html:not(.print-pdf) .reveal pre code{padding:20px}html:not(.print-pdf) .reveal blockquote{margin:20px 0}html:not(.print-pdf) .reveal .slides{zoom:1!important;padding:0!important;-webkit-perspective:none;perspective:none;-webkit-perspective-origin:50% 50%;perspective-origin:50% 50%;text-align:left!important;-webkit-transform:none!important;transform:none!important}html:not(.print-pdf) .reveal .slides,html:not(.print-pdf) .reveal .slides section{display:block!important;height:auto!important;left:0!important;margin-left:0!important;margin-top:0!important;overflow:visible!important;position:static!important;top:0!important;width:auto!important}html:not(.print-pdf) .reveal .slides section{opacity:1!important;padding:60px 20px!important;page-break-after:always!important;-webkit-transform:none!important;transform:none!important;-webkit-transform-style:flat!important;transform-style:flat!important;transition:none!important;visibility:visible!important;z-index:auto!important}html:not(.print-pdf) .reveal .slides section.stack{padding:0!important}html:not(.print-pdf) .reveal section:last-of-type{page-break-after:avoid!important}html:not(.print-pdf) .reveal section .fragment{opacity:1!important;-webkit-transform:none!important;transform:none!important;visibility:visible!important}html:not(.print-pdf) .reveal section img{background:#fff;border:1px solid #666;box-shadow:none;display:block;margin:15px 0}html:not(.print-pdf) .reveal section small{font-size:.8em}html:not(.print-pdf) .reveal .hljs{word-wrap:break-word;font-size:15pt;max-height:100%;white-space:pre-wrap;word-break:break-word}html:not(.print-pdf) .reveal .hljs .hljs-ln-numbers{white-space:nowrap}html:not(.print-pdf) .reveal .hljs td{color:inherit!important;font-size:inherit!important}}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:400;src:url(/static/source-sans-pro-regular-36443d248c8a75fde2a63bea32a21b21.eot);src:url(/static/source-sans-pro-regular-36443d248c8a75fde2a63bea32a21b21.eot?#iefix) format("embedded-opentype"),url(/static/source-sans-pro-regular-d16535500d9438afb40931462416cd34.woff) format("woff"),url(/static/source-sans-pro-regular-45c54810910de71280ab04b4c696126c.ttf) format("truetype")}@font-face{font-family:Source Sans Pro;font-style:italic;font-weight:400;src:url(/static/source-sans-pro-italic-97e79d3e28a440c77195d8e4d032d447.eot);src:url(/static/source-sans-pro-italic-97e79d3e28a440c77195d8e4d032d447.eot?#iefix) format("embedded-opentype"),url(/static/source-sans-pro-italic-983d97ca59e8e24e94c6ae9083408e68.woff) format("woff"),url(/static/source-sans-pro-italic-10a5cb40054505a4b3a9c7146c2e4d8b.ttf) format("truetype")}@font-face{font-family:Source Sans Pro;font-style:normal;font-weight:600;src:url(/static/source-sans-pro-semibold-83db537e62224a77933877cf674b6322.eot);src:url(/static/source-sans-pro-semibold-83db537e62224a77933877cf674b6322.eot?#iefix) format("embedded-opentype"),url(/static/source-sans-pro-semibold-f11ba60ae1c65b37e61628cb13c29e14.woff) format("woff"),url(/static/source-sans-pro-semibold-6ebea875df77b49da05bbaaf85494fac.ttf) format("truetype")}@font-face{font-family:Source Sans Pro;font-style:italic;font-weight:600;src:url(/static/source-sans-pro-semibolditalic-fb03c6601ab6f48952c4364edcae8167.eot);src:url(/static/source-sans-pro-semibolditalic-fb03c6601ab6f48952c4364edcae8167.eot?#iefix) format("embedded-opentype"),url(/static/source-sans-pro-semibolditalic-a43f56accdef4a0b01f0d88ad86cccf4.woff) format("woff"),url(/static/source-sans-pro-semibolditalic-522a9ee9b3b2ecbdd3676f3bfb53187d.ttf) format("truetype")}section.has-light-background,section.has-light-background h1,section.has-light-background h2,section.has-light-background h3,section.has-light-background h4,section.has-light-background h5,section.has-light-background h6{color:#222}:root{--r-background-color:#191919;--r-main-font:Source Sans Pro,Helvetica,sans-serif;--r-main-font-size:42px;--r-main-color:#fff;--r-block-margin:20px;--r-heading-margin:0 0 20px 0;--r-heading-font:Source Sans Pro,Helvetica,sans-serif;--r-heading-color:#fff;--r-heading-line-height:1.2;--r-heading-letter-spacing:normal;--r-heading-text-transform:uppercase;--r-heading-text-shadow:none;--r-heading-font-weight:600;--r-heading1-text-shadow:none;--r-heading1-size:2.5em;--r-heading2-size:1.6em;--r-heading3-size:1.3em;--r-heading4-size:1em;--r-code-font:monospace;--r-link-color:#42affa;--r-link-color-dark:#068de9;--r-link-color-hover:#8dcffc;--r-selection-background-color:#bee4fd;--r-selection-color:#fff}.reveal-viewport{background:#191919;background-color:var(--r-background-color)}.reveal{color:var(--r-main-color);font-family:var(--r-main-font);font-size:var(--r-main-font-size);font-weight:400}.reveal ::selection{background:var(--r-selection-background-color);color:var(--r-selection-color);text-shadow:none}.reveal ::-moz-selection{background:var(--r-selection-background-color);color:var(--r-selection-color);text-shadow:none}.reveal .slides section,.reveal .slides section>section{font-weight:inherit;line-height:1.3}.reveal h1,.reveal h2,.reveal h3,.reveal h4,.reveal h5,.reveal h6{word-wrap:break-word;color:var(--r-heading-color);font-family:var(--r-heading-font);font-weight:var(--r-heading-font-weight);letter-spacing:var(--r-heading-letter-spacing);line-height:var(--r-heading-line-height);margin:var(--r-heading-margin);text-shadow:var(--r-heading-text-shadow);text-transform:var(--r-heading-text-transform)}.reveal h1{font-size:var(--r-heading1-size)}.reveal h2{font-size:var(--r-heading2-size)}.reveal h3{font-size:var(--r-heading3-size)}.reveal h4{font-size:var(--r-heading4-size)}.reveal h1{text-shadow:var(--r-heading1-text-shadow)}.reveal p{line-height:1.3;margin:var(--r-block-margin) 0}.reveal h1:last-child,.reveal h2:last-child,.reveal h3:last-child,.reveal h4:last-child,.reveal h5:last-child,.reveal h6:last-child{margin-bottom:0}.reveal iframe,.reveal img,.reveal video{max-height:95%;max-width:95%}.reveal b,.reveal strong{font-weight:700}.reveal em{font-style:italic}.reveal dl,.reveal ol,.reveal ul{display:inline-block;margin:0 0 0 1em;text-align:left}.reveal ol{list-style-type:decimal}.reveal ul{list-style-type:disc}.reveal ul ul{list-style-type:square}.reveal ul ul ul{list-style-type:circle}.reveal ol ol,.reveal ol ul,.reveal ul ol,.reveal ul ul{display:block;margin-left:40px}.reveal dt{font-weight:700}.reveal dd{margin-left:40px}.reveal blockquote{background:hsla(0,0%,100%,.05);box-shadow:0 0 2px rgba(0,0,0,.2);display:block;font-style:italic;margin:var(--r-block-margin) auto;padding:5px;position:relative;width:70%}.reveal blockquote p:first-child,.reveal blockquote p:last-child{display:inline-block}.reveal q{font-style:italic}.reveal pre{word-wrap:break-word;box-shadow:0 5px 15px rgba(0,0,0,.15);display:block;font-size:.55em;line-height:1.2em;margin:var(--r-block-margin) auto;position:relative;text-align:left;width:90%}.reveal code,.reveal pre{font-family:var(--r-code-font)}.reveal code{-o-tab-size:2;tab-size:2;text-transform:none}.reveal pre code{word-wrap:normal;display:block;max-height:400px;overflow:auto;padding:5px}.reveal .code-wrapper{white-space:normal}.reveal .code-wrapper code{white-space:pre}.reveal table{border-collapse:collapse;border-spacing:0;margin:auto}.reveal table th{font-weight:700}.reveal table td,.reveal table th{border-bottom:1px solid;padding:.2em .5em;text-align:left}.reveal table td[align=center],.reveal table th[align=center]{text-align:center}.reveal table td[align=right],.reveal table th[align=right]{text-align:right}.reveal table tbody tr:last-child td,.reveal table tbody tr:last-child th{border-bottom:none}.reveal sup{font-size:smaller;vertical-align:super}.reveal sub{font-size:smaller;vertical-align:sub}.reveal small{display:inline-block;font-size:.6em;line-height:1.2em}.reveal small,.reveal small *{vertical-align:top}.reveal img{margin:var(--r-block-margin) 0}.reveal a{color:var(--r-link-color);text-decoration:none;transition:color .15s ease}.reveal a:hover{border:none;color:var(--r-link-color-hover);text-shadow:none}.reveal .roll span:after{background:var(--r-link-color-dark);color:#fff}.reveal .r-frame{border:4px solid var(--r-main-color);box-shadow:0 0 10px rgba(0,0,0,.15)}.reveal a .r-frame{transition:all .15s linear}.reveal a:hover .r-frame{border-color:var(--r-link-color);box-shadow:0 0 20px rgba(0,0,0,.55)}.reveal .controls,.reveal .progress{color:var(--r-link-color)}.reveal .progress{background:rgba(0,0,0,.2)}@media print{.backgrounds{background-color:var(--r-background-color)}}.hljs{background:#3f3f3f;color:#dcdcdc;display:block;overflow-x:auto;padding:.5em}.hljs-keyword,.hljs-selector-tag,.hljs-tag{color:#e3ceab}.hljs-template-tag{color:#dcdcdc}.hljs-number{color:#8cd0d3}.hljs-attribute,.hljs-template-variable,.hljs-variable{color:#efdcbc}.hljs-literal{color:#efefaf}.hljs-subst{color:#8f8f8f}.hljs-name,.hljs-section,.hljs-selector-class,.hljs-selector-id,.hljs-title,.hljs-type{color:#efef8f}.hljs-bullet,.hljs-link,.hljs-symbol{color:#dca3a3}.hljs-built_in,.hljs-builtin-name,.hljs-deletion,.hljs-string{color:#cc9393}.hljs-addition,.hljs-comment,.hljs-meta,.hljs-quote{color:#7f9f7f}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}#___gatsby,#gatsby-focus-wrapper{height:inherit}body{margin:0;padding:0}#not-found{align-items:center;background-color:#f8bb15;color:#fff;display:flex;font-family:Slabo\ 27px,-apple-system,Roboto,sans-serif,serif;font-size:3.5rem;font-weight:700;height:100vh;justify-content:center;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:100vw}#not-found h1{margin:0;padding:0}:root{--ch-primary-light:#f9c843;--ch-primary:#f8bb15;--ch-primary-dark:#d09a06;--ch-primary-darker:#9c7304;--r-main-font-size:32px;--r-heading-color:var(--ch-primary);--r-link-color:var(--ch-primary-dark);--r-link-color-hover:var(--ch-primary);--r-link-color-dark:var(--ch-primary-darker);--r-selection-background-color:var(--ch-primary);--r-heading1-size:2.2em;--r-heading-font:"Bree Serif","Source Sans Pro",Helvetica,sans-serif}</style><link rel="icon" href="/favicon-32x32.png?v=9c5a398035ac8387a465730bddbc5750" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=9c5a398035ac8387a465730bddbc5750"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=9c5a398035ac8387a465730bddbc5750"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=9c5a398035ac8387a465730bddbc5750"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=9c5a398035ac8387a465730bddbc5750"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=9c5a398035ac8387a465730bddbc5750"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=9c5a398035ac8387a465730bddbc5750"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=9c5a398035ac8387a465730bddbc5750"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=9c5a398035ac8387a465730bddbc5750"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><title>Git Guide</title><div class="reveal"><div class="slides"><section>
+<h1>Git Guide</h1>
+</section><section>
+<p>This guide aims to introduce you to git and is targeted at devs who currently use TFVC</p>
+</section><section>
+<h1>Why is git popular?</h1>
+<ul>
+<li>Better tooling support for non Visual Studio devs</li>
+<li>Better suited for open source development</li>
+<li>Better suited for feature branching</li>
+<li>The cost of supporting more than one VC system in build pipelines has resulted in products such as VSTS offering features in git before TFVC</li>
+</ul>
+<aside className="notes">
+<ul>
+<li>I think the "new branches for user stories" feature in VSTS works in git but not TFVC</li>
+</ul>
+</aside>
+</section><section>
+<p>Git is usually used from within your IDE but lets start off by running through some basic usage of git from the command line...</p>
+</section><section>
+<p>When using git the first thing you need to do is tell it who you are by using the <strong>git config</strong> command:</p>
+<p><img src="/377c89ae28d256cbccdf2128ccbf69e3/git-0.png" alt=""></p>
+<small>
+<p>Normally your IDE does this for you</p>
+</small>
+</section><section>
+<p>Lets make our current directory a git repository by running the <strong>git init</strong> command:</p>
+<p><img src="/2eed16d6e1fc52fcff4500a3385885ea/git-1.png" alt=""></p>
+<ul>
+<li>Creates a hidden <strong>.git</strong> folder that git uses to store stuff</li>
+<li>Think of a <strong>repository</strong> as a TFVC workspace</li>
+</ul>
+</section><section>
+<p>Lets create a file in the workspace and put some text in it:</p>
+<p><img src="/5a3ff2b77a70472b24faa3b4bc42234f/git-2.png" alt=""></p>
+</section><section>
+<p>Now lets run <strong>git status</strong> to see the current status of our workspace:</p>
+<p><img src="/cfc21a60edb095529b00c7dac8a70610/git-3.png" alt=""></p>
+<ul>
+<li>This command tells you which files are to be included in the next commit</li>
+<li>A <strong>commit</strong> is the same as a check-in apart from it is entirely local</li>
+</ul>
+</section><section>
+<p><img src="/cfc21a60edb095529b00c7dac8a70610/git-3.png" alt=""></p>
+<ul>
+<li>As you can see we now have untracked files:</li>
+<li>We need to <strong>add</strong> them to include them in our next commit (change set)</li>
+</ul>
+</section><section>
+<p>So lets do that:</p>
+<p><img src="/47dd9ea6579be2e498172b7c76b6683d/git-4.png" alt=""></p>
+<p>Think of this as <strong>including pending changes</strong></p>
+</section><section>
+<p>Now lets run <strong>git status</strong> again:</p>
+<p><img src="/9e2c9a1800bb6fca78800c8c3c905bc8/git-5.png" alt=""></p>
+<p>Now our changes are <strong>committed</strong> which means they will be in our next commit</p>
+</section><section>
+<p>Now lets run <strong>git commit</strong> to check in our changes</p>
+<p><img src="/7364714b74321c73dedeec297a33c22c/git-6.png" alt=""></p>
+</section><section>
+<h1>Git Commit</h1>
+<p>Unlike TFVC where checking in sends the changes up to a remote server, git commits are entirely local</p>
+<small>
+<p><em>We'll get to sending the changes to a remote server later</em></p>
+</small>
+</section><section>
+<p>Lets run <strong>git log</strong> to view our history of commits:</p>
+<p><img src="/39115167782a4e119bbf00fbceaac585/git-7.png" alt=""></p>
+</section><section>
+<p><img src="/39115167782a4e119bbf00fbceaac585/git-7.png" alt=""></p>
+<ul>
+<li>Notice the hash written in yellow next to the word commit, this is the commit ID</li>
+<li>Think of this as a <strong>change set ID</strong></li>
+<li>A commit ID is a SHA-1 hash</li>
+</ul>
+</section><section>
+<p>Lets decrypt the commit ID hash to see what's inside it using the <strong>git cat-file</strong> command:</p>
+<p><img src="/d528f114c57675ecdc73e4c96d69a4e0/git-8.png" alt=""></p>
+<ul>
+<li>Everything here looks pretty standard apart from the tree which is another SHA-1 hash</li>
+<li>A <strong>tree</strong> is git speak for a directory</li>
+<li>This means the commit ID is a hash of a hash along side some metadata</li>
+</ul>
+</section><section>
+<p>Lets decrypt the tree SHA-1 hash:</p>
+<p><img src="/b4b29105e95a2453b2b6c0dff922d550/git-9.png" alt=""></p>
+<ul>
+<li>This tree contains a blob called helloworld.txt</li>
+<li>A <strong>blob</strong> is git speak for the contents of a file</li>
+</ul>
+</section><section>
+<p>Lets decrypt the blob SHA-1 hash:</p>
+<p><img src="/db5aa6c87f45a08fa4b4821d0e3c556d/git-10.png" alt=""></p>
+<p>As you can see it contains the file contents</p>
+</section><section>
+<h1>Git Object Hierarchy</h1>
+<p><img src="/81cd1e28f288954c2ff837176069f5e2/git-object-hierarchy-1.png" alt=""></p>
+<small>
+<p>It's hashes all the way down</p>
+</small>
+</section><section>
+<p>Lets add some new files to our workspace:</p>
+<p><img src="/da266bf25078cc0bb48233cd9aab8ad4/git-11.png" alt=""></p>
+</section><section>
+<p>Lets include them in our changes (add)<br>
+and check them in (commit):</p>
+<p><img src="/75c585f51bef6a22f699fbe18739f1cf/git-12.png" alt=""></p>
+</section><section>
+<p>Lets view our history again</p>
+<p><img src="/29244ccf5bec8ef85000a587c664c2f8/git-13.png" alt=""></p>
+<p>We now have 2 commits</p>
+</section><section>
+<p>Lets decrypt the latest commit ID to see what's inside it:</p>
+<p><img src="/740e3d05d76f8f4009015afa7baf2bbd/git-14.png" alt=""></p>
+<ul>
+<li>This commit has a parent which is the previous commit</li>
+<li>This means that even if two workspaces contain the exact same files &#x26; folders, unless they share the exact same history and were created at the exact same time, their commit IDs will be different</li>
+<li>This means that if you commit some changes, then remove the changes and commit again, then the commit ID will be different despite the workspace being the same</li>
+</ul>
+</section><section>
+<p>Lets decrypt the tree to see what's inside it:</p>
+<p><img src="/4827f202c45765a7c8f27e9641ef6573/git-15.png" alt=""></p>
+<p>As you can see, trees can contain multiple files &#x26; directories just like the file system</p>
+</section><section>
+<p>Lets decrypt the new directory to see what's inside it:</p>
+<p><img src="/cea8c8fda1031d3c4c2c300826969879/git-16.png" alt=""></p>
+<p>The tree contains the new files as expected</p>
+</section><section>
+<p>For completeness lets just decrypt one of the new files:</p>
+<p><img src="/717bd396f5021bed588cd568cba358c5/git-17.png" alt=""></p>
+</section><section>
+<h1>Git Object Hierarchy</h1>
+<p><img src="/2eff1cee619a66e0759b99bfe431c1dd/git-object-hierarchy-2.png" alt=""></p>
+</section><section>
+<p>Lets put the exact same content into 2 different files:</p>
+<p><img src="/989b41e73beeb80afa3b61bad893d94e/git-18.png" alt=""></p>
+</section><section>
+<p>Running <strong>git status</strong> tells us we have unstaged changes:</p>
+<p><img src="/312b930bff2ebba4c6d2715fa2062d56/git-19.png" alt=""></p>
+<p>You may notice that this run of git status talks about the files being unstaged as opposed to untracked like earlier...</p>
+</section><section>
+<h1>Untracked vs unstaged</h1>
+<ul>
+<li>An <strong>untracked</strong> file is a brand new file that has been newly created</li>
+<li>An <strong>unstaged</strong> file is a file that has been previously committed, but has since been modified</li>
+<li>This is always abstracted away from you by your IDE so don't worry about it too much</li>
+</ul>
+</section><section>
+<p>Adding the files includes them in our commit:</p>
+<p><img src="/6a64a145fd03fc6e291f7d1adbc46de8/git-20.png" alt=""></p>
+<p>In git land this is usually called <strong>staging</strong> your changes</p>
+</section><section>
+<p>Lets commit our changes:</p>
+<p><img src="/be7ba8961e4cb8474027401ed20e2ec2/git-21.png" alt=""></p>
+</section><section>
+<p>We can now see our history contains 3 commits:</p>
+<p><img src="/a5ed347215cb51277aeac1fe05e0a727/git-22.png" alt=""></p>
+</section><section>
+<p>Lets view our new object tree in the terminal:</p>
+<p><img src="/66e917f5862df5eed0e0abd8d514fb3e/git-23.png" alt=""></p>
+<ul>
+<li>Note how both subfolderfile1.txt and subfolderfile2.txt have the exact <strong>same</strong> hash</li>
+<li>This demonstrates how efficient git is when storing files locally</li>
+</ul>
+</section><section>
+<h1>Git Object Tree</h1>
+<p><img src="/62016885d81cb64ab2aa081d86c4bda9/git-object-hierarchy-3.png" alt=""></p>
+</section><section>
+<p>Lets look at actually where git stores these objects on the disk</p>
+<p><img src="/203d0789d0a58c6b42cd3867bad17bc6/git-24.png" alt=""></p>
+</section><section>
+<h1>Storage</h1>
+<ul>
+<li>Git stores files in the hidden directory. They are placed in:
+<ul>
+<li>A directory that is named after the first 2 letters of the hash</li>
+<li>A file that is named after the subsequent 38 character of the hash</li>
+</ul>
+</li>
+<li>The object files in the hidden directory are compressed so cannot be opened without using special git commands</li>
+</ul>
+</section><section>
+<p>You may have noticed that the blob hash for the original helloworld.txt never changed during any of the commits</p>
+<p>This means that every commit represents a snapshot of all the files on the disk during the time of the commit, but the same file contents is never stored twice</p>
+</section><section>
+<p>Lets look at working with remote servers...</p>
+</section><section>
+<p>It is possible to create git repositories that are hosted by a provider</p>
+<small>
+<p>This is common practice</p>
+</small>
+</section><section>
+<p>Creating a remote repository varies per provider, but it is usually a very simple process</p>
+<p><img src="/14236d5b5501cd6b9e70f711fd4d47bf/vsts-remote-repository-creating.png" alt=""></p>
+</section><section>
+<p>Once you have created a remote repository you then have two options. You can either:</p>
+<ul>
+<li>Take a local repository that you have already created by running <strong>git init</strong> and upload it to the empty remote repository</li>
+<li>Download the empty remote repository to your machine</li>
+</ul>
+</section><section>
+<p>The git hosting provider will usually give you hints on how to do both:</p>
+<p><img src="/3cad09097e54743a89ff8d27bef3879b/vsts-remote-repository-created.png" alt=""></p>
+</section><section>
+<h1>Auth</h1>
+<ul>
+<li>When accessing VSTS git repositories from Visual Studio you are authenticated automatically</li>
+<li>When accessing the repository from the command-line like we are, we need to generate <strong>git credentials</strong></li>
+<li>This is a username and password that can only be used to access the git repository</li>
+<li>Visual Studio uses a more advanced token based system to authenticate git users</li>
+</ul>
+</section><section>
+<p>Lets do that now by clicking on generate git credentials:</p>
+<p><img src="/ca9afb234ac4b50a37cd91d0783c46d9/vsts-remote-repository-created-credentials-1.png" alt=""></p>
+</section><section>
+<p>Then simply fill in the form:</p>
+<p><img src="/893e181534058f94d7d3006d59ba790b/vsts-remote-repository-created-credentials-2.png" alt=""></p>
+<small>
+<p>Normally you don't need to do this since you'll be using Visual Studio</p>
+</small>
+</section><section>
+<p>Now lets download the repository to our machine by running the <strong>git clone</strong> command with the URL that VSTS
+gave us:</p>
+<p><img src="/a46e54403ed72fc6c4c7430a58bb27f9/git-25.png" alt=""></p>
+</section><section>
+<p>The git clone command creates a sub directory that is a local git repository. You can create local commits in
+this repository and then push them up to the server.</p>
+</section><section>
+<p>Alternatively, if you've already got a local git repository then you can push it up to the server instead of
+cloning</p>
+</section><section>
+<p>Lets push our git repository we worked on earlier to the remote VSTS repository we have created:</p>
+<p><img src="/76fda5f2367100e7ebb3a9d4a8777559/git-26.png" alt=""></p>
+</section><section>
+<p>We can now see the contents of our remote repository in VSTS:</p>
+<p><img src="/09dd73f8fc0ebd04529459b9926e27d6/vsts-remote-repository-pushed.png" alt=""></p>
+</section><section>
+<p>Regardless of whether we cloned a remote repository to our machine or pushed our local repository to the remote server, we now have a local repository that is "linked" to a remote repository.</p>
+</section><section>
+<p>We can see this "link" configured inside git's <strong>config</strong> file that you can find in the hidden <strong>.git</strong> folder:</p>
+<p><img src="/0a6cfa1a2fdde84b752d9a48fc27efe4/git-remote-config.png" alt=""></p>
+<p>Here you can see we have one branch called <strong>master</strong> and one remote repository called <strong>origin</strong>.</p>
+</section><section>
+<p>You can have many remote repository linked to your local repository but this is rare.</p>
+<p>The convention is to call your remote repository <strong>origin</strong>.</p>
+<p>We will go through branches later.</p>
+</section><section>
+<p>Lets make some local changes to the repo we pushed up to VSTS by modifying a file:</p>
+<p><img src="/22f0ee859ca30d72f54bf7d79a7d62fd/git-27.png" alt=""></p>
+<ul>
+<li>Note that it says: Your branch is one commit ahead of 'origin/master'</li>
+<li>This means that our local master branch has one commit that the remote master branch doesn't have</li>
+</ul>
+</section><section>
+<p>Lets make another commit modifying the same file:</p>
+<p><img src="/4d51555ffddd9f3ec0f1a934a867ebdf/git-28.png" alt=""></p>
+<p>We're now 2 ahead of master</p>
+</section><section>
+<p>We can now <strong>push</strong> our commit to the remote VSTS repository:</p>
+<p><img src="/af4a2f52e399de44019ab0125264ab58/git-29.png" alt=""></p>
+</section><section>
+<p>Annoyingly most of the message is about a change in behaviour that was introduced in git 2. That's embrace the new behaviour and stop that message appearing in the future:</p>
+<p><img src="/44dac0c95957ce15a2387e698d3ab07d/git-30.png" alt=""></p>
+</section><section>
+<p>If we look at VSTS we can see it knows about both of the new commits now:</p>
+<p><img src="/ed9b2c5ecc51ec71e20175b6ad88757c/vsts-commit-history-1.png" alt=""></p>
+</section><section>
+<p>This allows us to make our commit messages in git much more descriptive than our check-in messages in TFVC.</p>
+</section><section>
+<p>Since we are in control of when others can see our changes, we can make lots of small commits with descriptive messages and then push them when we are ready.</p>
+<p>This is in contrast to TFVC messages where you only describe your changes when you're ready to publish them, resulting in a larger amount of changes needing to be described.</p>
+</section><section>
+<p>Commit messages are also mandatory, you must provide one - unlike check-in messages</p>
+</section><section>
+<p>Lets make a change on the remote server that isn't on our machine:</p>
+<p><img src="/8fa9cd103e54ac9896cc1579faf19303/vsts-modifying-file-remotely.png" alt=""></p>
+<small>
+<p>This is the same as someone else making a commit, and then pushing it to the remote repository</p>
+</small>
+</section><section>
+<p>Lets pull that change down to our machine using the <strong>git pull</strong> command:</p>
+<p><img src="/87401da5aaeb0b4ac26452f90a90159d/git-31.png" alt=""></p>
+</section><section>
+<h1>Lets recap what we've seen so far...</h1>
+</section><section>
+<h1>git repository<br />==<br />TFVC workspace</h1>
+</section><section>
+<h1>git commit<br />==<br />TFVC changeset</h1>
+</section><section>
+<h1>git commit &#x26;&#x26; git push<br />==<br />TFVC check-in</h1>
+<p><img src="/72394d6a2efb2e09030bccc36722d099/push.png" alt=""></p>
+</section><section>
+<h1>git pull<br />==<br />TFVC get latest</h1>
+<p><img src="/fa15aa6d865e15bb5b8ba96b8231146a/pull.png" alt=""></p>
+</section><section>
+<h1>git staging changes<br />==<br />TFVC include pending changes</h1>
+</section><section>
+<h1>git commit id<br />==<br />TFVC changeset id</h1>
+</section><section>
+<p>Lets see what all this looks like in Visual Studio...</p>
+</section><section>
+<p>After we've made some changes in our local repository we can review our changes inside the changes window:</p>
+<p><img src="/2553a84c372a61c2b60a26c53ed17c00/vs-commit.png" alt=""></p>
+<p>By default all changes are staged</p>
+</section><section>
+<p>You can also choose which files to commit by using the right click menu to stage only some of them:</p>
+<p><img src="/29dc0d416b3454cf052aa185f6af9145/vs-commit-stage.png" alt=""></p>
+</section><section>
+<p>If you choose to stage only certain files, then the other files are unstaged:</p>
+<p><img src="/c999319d794feff159f7871738e91d80/vs-commit-staged.png" alt=""></p>
+</section><section>
+<p>Once you have committed, you need to push your changes to the server. To do this click on sync:</p>
+<p><img src="/b0d5e6c22f47f4981cbbe05ed739c913/vs-committed.png" alt=""></p>
+</section><section>
+<p>Visual Studio has a feature called <strong>sync</strong>
+Sync just calls <strong>pull</strong> then <strong>push</strong></p>
+</section><section>
+<p>Clicking on the blue <strong>sync</strong> link underneath the branch name performs a sync</p>
+<p><img src="/1526e0069068d0696228c4f38b9dc552/vs-sync-1.png" alt=""></p>
+<p>The local repository and the server will then have the same code for the current branch</p>
+</section><section>
+<p>You can view commits by right clicking on the solution and then clicking on history:</p>
+<p><img src="/3374f54b1bed42247cc10d8dffa9ac3a/vs-commit-history.png" alt=""></p>
+</section><section>
+<p>The read arrows on the right-hand side point to which commit the local and remote repositories consider to the latest:</p>
+<p><img src="/1b417ba25a7087ebc0dc1ac0a070986b/vs-commit-history-head.png" alt=""></p>
+<p>This means our local branch is 1 commit ahead of the remote repository</p>
+</section><section>
+<p>Lets create a new branch inside our repository:</p>
+<p><img src="/de41eeed54ebf6b0793aa2b72aa77fb8/git-32.png" alt=""></p>
+<p>This command creates a branch and "switches" to it</p>
+</section><section>
+<p>Unlike in VSTS where branches are represented in mapped folders, git repositories manage different branches by allowing you to switch between them.</p>
+<p>When you switch branches your workspace is changed to represent the branch you're changing to.</p>
+</section><section>
+<p>Having lots of branches on your machine doesn't actually take up as much room as you'd think since git is efficient and only ever stores the same version of a file once. Normally branches will have more in common than
+differences.</p>
+<p>When you switch branches your workspace is instantly changed to represent the branch you're changing to.</p>
+</section><section>
+<p>Lets make a change in our new <em>vnext</em> branch:</p>
+<p><img src="/d013c78b570e2775bef513cd406dc105/git-33.png" alt=""></p>
+</section><section>
+<p>Now we can view the contents of the modified file before and after changing branches:</p>
+<p><img src="/81014bf6342403b9d2ca91ca39e2f902/git-34.png" alt=""></p>
+</section><section>
+<p>A branch in git is simply a link to a commit id</p>
+<p>When you perform a commit the current branch is updated to the new commit</p>
+</section><section>
+<h1>Git Object Hierarchy</h1>
+<p><img src="/98ae91837e069da1279c60690d288af7/git-object-hierarchy-4.png" alt=""></p>
+</section><section>
+<p>Lets make a change to our master branch that conflicts with the change in vnext:</p>
+<p><img src="/15d2e2634a4d51df3bf50d89b858afe8/git-35.png" alt=""></p>
+</section><section>
+<h1>Git Object Hierarchy</h1>
+<p><img src="/1bc2065fa425bcc214c8a14fa5f154a0/git-object-hierarchy-5.png" alt=""></p>
+</section><section>
+<p>We can now try and perform a <strong>merge</strong>:</p>
+<p><img src="/0743db3d87fb358ee98825f88378782b/git-36.png" alt=""></p>
+<p>Since we are currently in the master branch, this merges vnext into master</p>
+</section><section>
+<p>As expected we have a merge conflict, we can see this by running git status:</p>
+<p><img src="/d0c1345f089478f3f8d647fbabcf77d5/git-37.png" alt=""></p>
+</section><section>
+<p>If we look inside the conflicted file, we can see that git has put both modified versions of the conflicted line in the file:</p>
+<p><img src="/9913e6607ee1829530219554bb3fbb01/git-38.png" alt=""></p>
+</section><section>
+<p>We can fix the merge by modifying the file and then performing a commit:</p>
+<p><img src="/488d62253676922daad38045a9e68d1b/git-39.png" alt=""></p>
+<small>
+<p>Note we didn't have to specify a commit name, since our workspace was in process of performing a merge</p>
+</small>
+</section><section>
+<p>Note that if we were merging with Visual Studio then we would have the standard merge window and this would handle the extra commit command required</p>
+</section><section>
+<p>If we run <strong>git log</strong> then we can see the merge commit:</p>
+<p><img src="/42cb0a1440d96d5e62e81f11ab418ded/git-40.png" alt=""></p>
+</section><section>
+<p>If we decrypt the commit we find something interesting about it:</p>
+<p><img src="/2935dea5cc39440374da6b95cf696815/git-41.png" alt=""></p>
+<p>Merge commits have 2 parents</p>
+</section><section>
+<h1>Git Object Hierarchy</h1>
+<p><img src="/de8a644b0863395a5da5b33d100e6123/git-object-hierarchy-6.png" alt=""></p>
+</section><section>
+<p>Git also has a merging feature called <strong>rebase</strong></p>
+</section><section>
+<p>When merging a branch it can be difficult to track where certain changes come from</p>
+<p>Rebasing allows you to stack one branch on top of another</p>
+</section><section>
+<p>Lets make some changes in a new branch but perform a hotfix to the master branch in the process:</p>
+<p><img src="/0f96ae5249f682cb2307bfeb9968b891/git-42.png" alt=""></p>
+</section><section>
+<h1>Git Object Hierarchy</h1>
+<p><img src="/14382801d5832479da67029e80aa023a/git-object-hierarchy-7.png" alt=""></p>
+</section><section>
+<p>Now we can rebase our new-feature branch onto the latest version of the master branch:</p>
+<p><img src="/b5521957df1b6d77fdfa2c04d48cbc30/git-43.png" alt=""></p>
+</section><section>
+<p>If we view our last 5 commits you can see that our changes have now been made "on top of" our hotfix:</p>
+<p><img src="/687e05823062b490441ffbee831842cf/git-44.png" alt=""></p>
+</section><section>
+<h1>Git Object Hierarchy</h1>
+<p><img src="/196560a7bdda30565b9c40ef92da4153/git-object-hierarchy-8.png" alt=""></p>
+</section><section>
+<p>We now have a much simpler commit history, and all the new feature commits are grouped together</p>
+</section><section>
+<p>If we want our rebased changes to go into the master branch then the merge is very simple as we have all the changes from master in our branch already</p>
+</section><section>
+<p>Since our new-feature branch is now an extension of master we can do a simple merge to bring master up to date:</p>
+<p><img src="/27733edeb73fca5f4316ebe6a7975c31/git-45.png" alt=""></p>
+<small>
+<p>When the branch you're merging in already has all of the commits of the current branch, this is called a fast-forward merge</p>
+</small>
+</section><section>
+<h1>Git Object Hierarchy</h1>
+<p><img src="/c053f6987f9a8acaf68402d0b4294ff0/git-object-hierarchy-9.png" alt=""></p>
+</section><section>
+<p>Think of performing a rebase as saying:<br>
+<em><strong>"I want my changes to be applied to the latest version of the source branch"</strong></em></p>
+</section><section>
+<p>A git <strong>tag</strong> is a snapshot of the code at a given moment in time</p>
+</section><section>
+<p>Branches and tags are merely links to a commit</p>
+</section><section>
+<p>When a commit is made, the current branch is updated to point at the latest commit, whereas a tag does not move</p>
+</section><section>
+<p>Lets create a tag using the <strong>git tag</strong> command:</p>
+<p><img src="/9c081dc9d500f64738cc2612f4d1863d/git-46.png" alt=""></p>
+</section><section>
+<p>Now lets make a change to our branch:</p>
+<p><img src="/4530de477ddc370f5f44b5fed1b41cfe/git-47.png" alt=""></p>
+</section><section>
+<h1>Git Object Hierarchy</h1>
+<p><img src="/7e784a22ff72164d2835569f2781e629/git-object-hierarchy-10.png" alt=""></p>
+</section><section>
+<p>This makes tags a perfect way to track releases</p>
+</section><section>
+<p>The <strong>git push</strong> command only pushes commits from branches that the remote server knows about</p>
+</section><section>
+<p>Lets run a <strong>git push</strong> command now:</p>
+<p><img src="/55825b96efb6bff1cfb5a873ca706984/git-48.png" alt=""></p>
+</section><section>
+<p>If we look at VSTS we'll see that it still doesn't know about any of our branches or tags we've created locally:</p>
+<p><img src="/dffa261bc1b70ae69e705dfaf6a41bc9/vsts-no-branches-pushed.png" alt=""></p>
+<p><img src="/0524e972a941da70465ce0e94b88554a/vsts-no-tags-pushed.png" alt=""></p>
+</section><section>
+<p>We must push these branches and tags up manually</p>
+</section><section>
+<p>This is to prevent all your local experimental dev branches being uploaded</p>
+</section><section>
+<p>To push a local branch add a couple of parameters to the push command:</p>
+<p><img src="/9b094cfe0551b6064d1ec5a4852a2d19/git-49.png" alt=""></p>
+<small>
+<p>Visual Studio does this for you...</p>
+</small>
+</section><section>
+<p>You'll now see this branch in VSTS:</p>
+<p><img src="/4890781fe0ecb048f23e708a724e8249/vsts-branch-pushed.png" alt=""></p>
+</section><section>
+<p>This also works for tags:</p>
+<p><img src="/6fc7da075f86c67d424ec06f1c9459bd/git-50.png" alt=""></p>
+<small>
+<p>Visual Studio does <strong>not</strong> do this for you...</p>
+</small>
+</section><section>
+<p>You'll now see this tag in VSTS:</p>
+<p><img src="/70f805ae6e0ac70c0667ac0fa8833f31/vsts-tag-pushed.png" alt=""></p>
+</section><section>
+<p>Lets see what branching and merging looks like in Visual Studio...</p>
+</section><section>
+<p>Lets start off by creating a branch</p>
+</section><section>
+<p>Go to the Team Explorer</p>
+<p><img src="/60cae2bc657d582ab9e35105a79281b2/vs-team-explorer.png" alt=""></p>
+<p>And click on "Branches"</p>
+</section><section>
+<p>Here we can see our local and remote branches:</p>
+<p><img src="/55a85fa350093fc9d4fce7473f4f30ec/vs-branches-1.png" alt=""></p>
+<p>Click on "New Branch" to create a branch</p>
+</section><section>
+<p>Enter the name of your new branch and click on "Create Branch":</p>
+<p><img src="/1fc7a8417725adf94067e50c6d0fa1c1/vs-new-branch.png" alt=""></p>
+<small>
+<p>Leaving "Checkout branch" ticked means you'll switch to this branch once it is created</p>
+</small>
+</section><section>
+<p>Make some changes to a file, then go back to Team Explorer:</p>
+<p><img src="/60cae2bc657d582ab9e35105a79281b2/vs-team-explorer.png" alt=""></p>
+<p>And click on "Changes"</p>
+</section><section>
+<p>Enter your commit message and click on "Commit All"</p>
+<p><img src="/9fa4b92d99f59dcf2b81d36c0f958616/vs-changes.png" alt=""></p>
+</section><section>
+<p>Go back to Team Explorer:</p>
+<p><img src="/60cae2bc657d582ab9e35105a79281b2/vs-team-explorer.png" alt=""></p>
+<p>And click on "Sync"</p>
+</section><section>
+<p>Click on "Push" to push your new local branch to the remote server:</p>
+<p><img src="/78320827512bbe6b644bdeee1b58a4ab/vs-sync-2.png" alt=""></p>
+</section><section>
+<p>Visual Studio will tell you when it's finished:</p>
+<p><img src="/580978459c3b624543ba60da4ab1cb4e/vs-sync-pushed-branch.png" alt=""></p>
+</section><section>
+<p>If we go back to the Branches screen we can see there is a remote version of our new branch that others can now
+see:</p>
+<p><img src="/e25af74a2d49edbb3b42ddc0473dd7ab/vs-branches-2.png" alt=""></p>
+</section><section>
+<p>The easiest way to switch branches is to use the menu on the bottom right hand corner:</p>
+<p><img src="/6d849e3698f8acc9df7c1886fb5b75a6/vs-switch-branch.png" alt=""></p>
+<p>Use this menu to switch between branches and then commit conflicting changes in either branch</p>
+</section><section>
+<p>Now go to the Branches screen:</p>
+<p><img src="/e25af74a2d49edbb3b42ddc0473dd7ab/vs-branches-2.png" alt=""></p>
+<p>And click on "Merge"</p>
+</section><section>
+<p>We're switched to the master branch, so lets merge our experimental branch into our master branch:</p>
+<p><img src="/8defcd81c0b3908a159a2027d7026045/vs-branch-merge.png" alt=""></p>
+</section><section>
+<p>Visual Studio will tell you about the conflicts:</p>
+<p><img src="/a06cf3436880bdef07ca7694012dbaf7/vs-branch-merge-conflicts.png" alt=""></p>
+</section><section>
+<p>If we view the conflicting file we'll see the merge text git puts in the file:</p>
+<p><img src="/d33eae6e3da3aa8fbbaa0abbfc89d635/vs-branch-merge-conflicts-file.png" alt=""></p>
+</section><section>
+<p>If we go back to the Changes screen we can either cancel the merge by clicking on "Abort" or resolve the conflicts by clicking on "Conflicts 1":</p>
+<p><img src="/a06cf3436880bdef07ca7694012dbaf7/vs-branch-merge-conflicts.png" alt=""></p>
+</section><section>
+<p>If we click on "Conflicts 1" then a list of files that have conflicts:</p>
+<p><img src="/17774338064e2b8377b6194259ed1851/vs-branch-merge-conflicts-resolve-1.png" alt=""></p>
+</section><section>
+<p>Clicking on a file gives us some options:</p>
+<p><img src="/86234e05d4423194900915e3fc231f87/vs-branch-merge-conflicts-resolve-2.png" alt=""></p>
+</section><section>
+<p>If we click on "Merge" then we see the familiar conflicts window:</p>
+<p><img src="/6ea1e9b37743ff84c0392d5a282d2897/vs-branch-merge-conflicts-resolve-3.png" alt=""></p>
+</section><section>
+<p>Once we have resolved the conflict we can commit our merge (or abort it):</p>
+<p><img src="/6e519851aaff57b40f83af119f92f82a/vs-branch-merge-conflicts-resolve-4.png" alt=""></p>
+</section><section>
+<p>Clicking on "Commit Merge" takes us to the commit screen:</p>
+<p><img src="/fe5b2a8a3af41085c29b0f54c3c1b469/vs-branch-merge-conflicts-resolve-5.png" alt=""></p>
+<p>It has a handy note saying we're in the middle of a merge</p>
+</section><section>
+<p>We can then push our merge commit to the remote repository just like any other commit</p>
+</section><section>
+<p>Git also has a feature called a <strong>pull request</strong></p>
+</section><section>
+<p>A pull request is not actually a feature of git itself, but is actually a feature that git providers offer</p>
+</section><section>
+<p>With open source projects anyone can access your source code</p>
+</section><section>
+<p>This also means they can change it to add new features</p>
+</section><section>
+<p>Open source projects require the ability to stop anyone just modifying the remote repository at will</p>
+<p>But they also require the ability to take changes from other people's repository</p>
+</section><section>
+<p>Lets run through how this works in git...</p>
+</section><section>
+<p>Imagine an open source team has an public repository:</p>
+<p><img src="/2e368b931cde70818e3e9cabf7aa737b/git-pr-1.png" alt=""></p>
+</section><section>
+<p>A contributor <strong>forks</strong> the remote repository into their own remote repository</p>
+<p><img src="/febab5498e5439ff9c7102b87c8016fa/git-pr-2.png" alt=""></p>
+</section><section>
+<p>Forking is a feature offered by a git provider, not git itself</p>
+</section><section>
+<p>The Contributor only has read access to the original repository but has read and write access to their forked copy</p>
+</section><section>
+<p>Contributors clone their forked remote repository onto their machine:</p>
+<p><img src="/8fcc471616cddba76c9d226f71fa705a/git-pr-3.png" alt=""></p>
+</section><section>
+<p>They make changes in their own local repository and push them up to their forked repository</p>
+<p><img src="/38b89a2c688e5e0fd29d10812c23c079/git-pr-4.png" alt=""></p>
+</section><section>
+<p>They then perform a <strong>pull request</strong>:</p>
+<p><img src="/3f2ecc8d86d8c7b1ae2a1457256f29e8/git-pr-5.png" alt=""></p>
+</section><section>
+<p>A pull request asks the original repository's owners if they would like to pull the changes from the forked repository</p>
+</section><section>
+<p>Pull requests are a feature offered by a git provider, not git itself</p>
+</section><section>
+<p>Most git providers offer a GUI including a comments/forum section where the original repository's owners can discuss the changes</p>
+</section><section>
+<p>The original repository's owners can then accept or reject the pull request:</p>
+<p><img src="/66fc32f405100a3c7b64766124c76152/git-pr-6.png" alt=""></p>
+</section><section>
+<p>If accepted then the original and forked repositories will contain the same code:</p>
+<p><img src="/9168549f52964e0bd70d9f2ca1f462ef/git-pr-7.png" alt=""></p>
+</section><section>
+<p>Because the UI for commenting on the changes and the ability to accept and reject is so useful for code reviews, some git providers also allow dev teams to perform pull requests on branch merges too</p>
+</section><section>
+<p>Lets walk through doing a pull request when merging two branches in VSTS...</p>
+</section><section>
+<small>
+<p>It brings up this form:</p>
+</small>
+<p><img src="/b862baead4490f038cbb62cf22dba521/vsts-pull-request-1.png" alt=""></p>
+</section><section>
+<small>
+<p>Once it is created we are then given a comments section for all the reviewers to discuss the potential
+merge:</p>
+</small>
+<p><img src="/d550873d7597dcf011b588f32b691562/vsts-pull-request-2.png" alt=""></p>
+</section><section>
+<small>
+<p>We can then approve or reject the request:</p>
+</small>
+<p><img src="/a440b7a00df09853019b52cefcb46a09/vsts-pull-request-3.png" alt=""></p>
+</section><section>
+<small>
+<p>We can then clearly see in the discussions who's approved and rejected the request:</p>
+</small>
+<p><img src="/eac34b00c4c0443aba203c29d09c487f/vsts-pull-request-4.png" alt=""></p>
+<small>
+<p>We can also mark each comment as approved or rejected too</p>
+</small>
+</section><section>
+<small>
+<p>When we're ready we can complete the merge:</p>
+</small>
+<p><img src="/9950789a4fb39a0509ae0f8addc08b8a/vsts-pull-request-5.png" alt=""></p>
+</section><section>
+<small>
+<p>Notice the option to delete the branch, this is perfect for feature branches:</p>
+</small>
+<p><img src="/dc085f4064280d0a27d074d4a1ffa5e1/vsts-pull-request-6.png" alt=""></p>
+</section><section>
+<p><img src="/8b08602938dbe4f6941a84251b995226/vsts-pull-request-7.png" alt=""></p>
+</section><section>
+<p>Commit messages are actually separated into two parts</p>
+</section><section>
+<p>The first line of the message is the commit message</p>
+<small>
+<p>The convention is to keep this line under 72 characters long</p>
+</small>
+</section><section>
+<p>Any subsequent lines can contain a more detailed description of the commit</p>
+<small>
+<p>There is no limit to the length of the detailed description</p>
+</small>
+</section><section>
+<p>The commit message and detailed description must be separated by a new line</p>
+</section><section>
+<p>Below is an example commit messages that demonstrates this:</p>
+<pre><code>Database timeout bug fix
+
+The user repository was not disposing of the DbContext correctly so I added a using statement.
+
+- I also updated all of the unit tests.
+- I also updated all of the integration tests.
+</code></pre>
+</section><section>
+<p>When viewing commit history in VSTS the first line is displayed as the commit message, with the rest of it being displayed as a tooltip:</p>
+<p><img src="/6aed5474dd8f8c3908ef6d1dc49bae9c/vsts-commit-history-2.png" alt=""></p>
+<p><img src="/0f1577afa6b367e750a9a06b0da3aa49/vsts-commit-history-2-tooltip.png" alt=""></p>
+</section><section>
+<p>When viewing an individual commit in VSTS the first line is displayed as the commit message, with the rest of it being accessible by clicking on ˅:</p>
+<p><img src="/2ae9bebbcdde99a5dae85054a29e5d69/vsts-view-commit.png" alt=""></p>
+<p><img src="/4e571d2046dbf6eb3a59418204fa65e3/vsts-view-commit-details.png" alt=""></p>
+</section><section>
+<h1>Thanks for listening!</h1>
+<p>Any questions?</p>
+</section></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/git-guide/";window.___webpackCompilationHash="23f6b593a64b1b9bd863";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-e21c532cabe08cf5f6a0.js"],"app":["/app-097f08296bfbdb5998bf.js"],"component---src-pages-404-js":["/component---src-pages-404-js-1d8e56b17a975c3ac772.js"],"component---src-templates-presentation-js":["/component---src-templates-presentation-js-40ae00e1f03112118c8c.js"]};/*]]>*/</script><script src="/polyfill-e21c532cabe08cf5f6a0.js" nomodule=""></script><script src="/app-097f08296bfbdb5998bf.js" async=""></script><script src="/framework-012d30fcc554152db220.js" async=""></script><script src="/webpack-runtime-62f07391c3177cff15c6.js" async=""></script></body></html>

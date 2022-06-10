@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkslides=self.webpackChunkslides||[]).push([[883],{429:function(e,n,t){t.r(n);var l=t(7294);n.default=function(){return l.createElement("main",{id:"not-found"},l.createElement("title",null,"404"),l.createElement("h1",null,"{","4.0.4","}"))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-1d8e56b17a975c3ac772.js.map
