@@ -229,7 +229,7 @@ namespace AkkaExamples
   - Allows no access to internal state regardless of whether its public
   - Forces us to follow actor model correctly
   - When a failing actor restarts the reference is updated
-    
+
 - Props
   - Takes an expression on how to create Actor
   - Akka uses the expression to create actor
@@ -339,6 +339,7 @@ public class ExampleRootActor : ReceiveActor
   }
 }
 ```
+
 <aside class="notes">
 
 - Context exposes same Actor Of method as system
@@ -350,7 +351,7 @@ public class ExampleRootActor : ReceiveActor
 ---
 
 # Sending messages to parent
-          
+
 ``` csharp
 public class ExampleChildActor : ReceiveActor
 {
@@ -412,6 +413,7 @@ public class ExampleSelfTellActor : ReceiveActor
   private class ExampleSelfMessage { }
 }
 ```
+
 <aside class="notes">
 - Puts message at back of queue
 - Allows actor to process other messages in the mean time
@@ -506,9 +508,9 @@ public class ExampleAskActor : ReceiveActor
 # Behaviours
 
 ``` csharp
-public class ExampleBehaviorActor : ReceiveActor
+public class ExampleBehaviourActor : ReceiveActor
 {
-  public ExampleBehaviorActor()
+  public ExampleBehaviourActor()
   {
     Become(Starting);
   }
@@ -665,7 +667,7 @@ public class ExamplePipeToActor : ReceiveActor
 ---
 
 # Bells & Whistles
-          
+
 ``` csharp
 public class DownloadActor : ReceiveActor, IWithUnboundedStash
 {
