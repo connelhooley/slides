@@ -45,7 +45,6 @@ Lets make our current directory a git repository by running the **git init** com
 
 ![](git-1.png)
 
-
 - Creates a hidden **.git** folder that git uses to store stuff
 - Think of a **repository** as a TFVC workspace
 
@@ -198,7 +197,7 @@ Lets decrypt the tree to see what's inside it:
 As you can see, trees can contain multiple files & directories just like the file system
 
 ---
-    
+
 Lets decrypt the new directory to see what's inside it:
 
 ![](git-16.png)
@@ -267,7 +266,6 @@ Lets view our new object tree in the terminal:
 
 - Note how both subfolderfile1.txt and subfolderfile2.txt have the exact **same** hash
 - This demonstrates how efficient git is when storing files locally
-
 
 ---
 
@@ -413,7 +411,6 @@ Lets make some local changes to the repo we pushed up to VSTS by modifying a fil
 
 - Note that it says: Your branch is one commit ahead of 'origin/master'
 - This means that our local master branch has one commit that the remote master branch doesn't have
-
 
 ---
 
@@ -1194,7 +1191,7 @@ The commit message and detailed description must be separated by a new line
 
 Below is an example commit messages that demonstrates this:
 
-```
+``` text
 Database timeout bug fix
 
 The user repository was not disposing of the DbContext correctly so I added a using statement.
@@ -1221,6 +1218,6 @@ When viewing an individual commit in VSTS the first line is displayed as the com
 
 ---
 
-# Thanks for listening!
+# Thanks for listening
 
 Any questions?

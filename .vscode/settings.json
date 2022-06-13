@@ -5,6 +5,10 @@
     "Petabridge",
     "POCO",
     "refs",
-    "Unstash"
+    "TFVC",
+    "unstaged",
+    "Unstash",
+    "vnext",
+    "VSTS"
   ]
 }

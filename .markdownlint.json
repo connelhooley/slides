@@ -4,8 +4,11 @@
     "MD025": false,
     "MD033": {
         "allowed_elements": [
-            "aside"
+            "aside",
+            "small",
+            "br"
         ]
     },
+    "MD036": false,
     "MD045": false
 }
