@@ -135,7 +135,7 @@ If actors create other actors, how do I crete my first actor?
 
 # Actor System
 
-``` csharp
+```csharp
 using System;
 using Akka.Actor;
 
@@ -194,7 +194,7 @@ namespace AkkaExamples
 
 # Actor Of
 
-``` csharp
+```csharp
 using System;
 using Akka.Actor;
 
@@ -249,7 +249,7 @@ namespace AkkaExamples
 
 # Sending Messages
 
-``` csharp
+```csharp
 public class ExampleMessage
 {
   public ExampleMessage(string exampleData)
@@ -261,7 +261,7 @@ public class ExampleMessage
 }
 ```
 
-``` csharp
+```csharp
 IActorRef rootActor = _system.ActorOf(Props.Create(() => new ExampleRootActor()), "example-root-actor-name");
 
 //Send message to root actor via actor ref
@@ -283,7 +283,7 @@ rootActor.Tell(new ExampleMessage("Example message information"));
 
 # Writing your own Actor
 
-``` csharp
+```csharp
 public class ExampleRootActor : ReceiveActor
 {
   public ExampleRootActor()
@@ -325,7 +325,7 @@ public class ExampleRootActor : ReceiveActor
 
 # Child Actors
 
-``` csharp
+```csharp
 public class ExampleRootActor : ReceiveActor
 {
   private readonly IActorRef _exampleActorRef;
@@ -352,7 +352,7 @@ public class ExampleRootActor : ReceiveActor
 
 # Sending messages to parent
 
-``` csharp
+```csharp
 public class ExampleChildActor : ReceiveActor
 {
   public ExampleChildActor()
@@ -377,7 +377,7 @@ public class ExampleChildActor : ReceiveActor
 
 # Sending messages to self
 
-``` csharp
+```csharp
 public class ExampleSelfTellActor : ReceiveActor
 {
   public ExampleSelfTellActor()
@@ -425,7 +425,7 @@ public class ExampleSelfTellActor : ReceiveActor
 
 # Replying to messages
 
-``` csharp
+```csharp
 public class ExampleReplyActor : ReceiveActor
 {
   public ExampleReplyActor()
@@ -472,7 +472,7 @@ public class ExampleReplyActor : ReceiveActor
 
 # Receiving Replies
 
-``` csharp
+```csharp
 public class ExampleAskActor : ReceiveActor
 {
   private readonly IActorRef _exampleReplyActorRef;
@@ -507,7 +507,7 @@ public class ExampleAskActor : ReceiveActor
 
 # Behaviours
 
-``` csharp
+```csharp
 public class ExampleBehaviourActor : ReceiveActor
 {
   public ExampleBehaviourActor()
@@ -554,7 +554,7 @@ public class ExampleBehaviourActor : ReceiveActor
 
 # Stashing
 
-``` csharp
+```csharp
 public class ExampleStashActor : ReceiveActor, IWithUnboundedStash
 {
   public IStash Stash {get; set; } // Property to implement IWithUnboundedStash
@@ -608,7 +608,7 @@ public class ExampleStashActor : ReceiveActor, IWithUnboundedStash
 
 # PipeTo
 
-``` csharp
+```csharp
 public class ExamplePipeToActor : ReceiveActor
 {
   private readonly IThingyDoer _thingyDoer;
@@ -668,7 +668,7 @@ public class ExamplePipeToActor : ReceiveActor
 
 # Bells & Whistles
 
-``` csharp
+```csharp
 public class DownloadActor : ReceiveActor, IWithUnboundedStash
 {
   private HttpClient _client;

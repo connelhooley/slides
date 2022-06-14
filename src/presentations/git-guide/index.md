@@ -1191,7 +1191,7 @@ The commit message and detailed description must be separated by a new line
 
 Below is an example commit messages that demonstrates this:
 
-``` text
+```text
 Database timeout bug fix
 
 The user repository was not disposing of the DbContext correctly so I added a using statement.
