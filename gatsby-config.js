@@ -27,6 +27,15 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: "gatsby-remark-mermaid",
+            options: {
+              theme: "dark",
+              mermaidOptions: {
+                themeCSS: ".label foreignObject { overflow: visible; font-size: 90%; }",
+              },
+            },
+          },
+          {
             resolve: "gatsby-remark-copy-linked-files",
             options: {
               ignoreFileExtensions: [],

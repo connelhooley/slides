@@ -44,3 +44,24 @@ body {
   --r-heading1-size: 2.2em;
   --r-heading-font: 'Bree Serif', 'Source Sans Pro', Helvetica, sans-serif;
 }
+
+.mermaid {
+  background-color: white;
+  padding: .2em;
+}
+
+.mermaid .edgePath .path {
+  stroke: var(--ch-primary) !important;
+}
+
+.mermaid .edgePath .arrowheadPath {
+  stroke: var(--ch-primary) !important;
+  fill: var(--ch-primary) !important;
+}
+
+/* Hack to fix https://github.com/mermaid-js/mermaid/issues/1824 */
+section.past[style],
+section.present[style],
+section.future[style] {
+  display: block!important;
+}
