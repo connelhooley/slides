@@ -30,9 +30,6 @@ module.exports = {
             resolve: "gatsby-remark-mermaid",
             options: {
               theme: "dark",
-              mermaidOptions: {
-                themeCSS: ".label foreignObject { overflow: visible; font-size: 90%; }",
-              },
             },
           },
           {

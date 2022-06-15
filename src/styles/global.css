@@ -45,18 +45,29 @@ body {
   --r-heading-font: 'Bree Serif', 'Source Sans Pro', Helvetica, sans-serif;
 }
 
+.slides strong,
+.slides :not(pre) > code {
+  color: var(--ch-primary);
+}
+
 .mermaid {
   background-color: white;
   padding: .2em;
 }
 
-.mermaid .edgePath .path {
+.mermaid path {
   stroke: var(--ch-primary) !important;
 }
 
-.mermaid .edgePath .arrowheadPath {
+.mermaid marker {
   stroke: var(--ch-primary) !important;
   fill: var(--ch-primary) !important;
+}
+
+/* https://github.com/mermaid-js/mermaid/issues/790 */
+.mermaid foreignObject {
+  font-size: 90% !important;
+  overflow: visible !important;
 }
 
 /* Hack to fix https://github.com/mermaid-js/mermaid/issues/1824 */
